@@ -3540,3 +3540,101 @@ background: #784a80 !important;
 span.badge.price__badge-sale{
 background: #784a80 !important;
 }
+/* custom css */
+.card__inner {
+  height: 300px;
+}
+.card .media {
+  height: 300px;
+}
+.card__media .media img {
+  object-fit: scale-down !important;
+}
+.card .media {
+  background-color: #fff;
+}
+@media(max-width:768px) {
+  .card__media .media img {
+    width: 160px !important;
+    height: 100% !important;
+  }
+}
+.mobile_field__button {
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  color: currentColor;
+  cursor: pointer;
+  display: flex;
+  height: 4.4rem;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+  right: 0;
+  top: 0;
+  width: 4.4rem;
+  display: none;
+}
+@media(max-width:768px) {
+  .mobile_field__button {
+    display: block;
+  }
+}
+
+.search__button {
+  left: 0;
+}
+.reset__button {
+  right: 0 !important;
+}
+.search__input.field__input {
+  padding-left: 35px;
+  font-size: 20px;
+  border-radius: 12px;
+  border: 1px solid #d2d2d2;
+}
+.field__input:focus, .field__input:not(:placeholder-shown){
+  padding: unset !important;
+  padding-left: 35px !important;
+}
+.field__label {
+  left: 35px;
+  line-height: unset;
+  font-weight: 400;
+  color: #d2d2d2;
+}
+.field__input:focus~.field__label{
+  display: none !important;
+}
+.search__input.field__input:focus-visible {
+  box-shadow: unset;
+  outline: unset;
+  outline-offset: unset;
+}
+.field__input:not(:placeholder-shown)~.field__label {
+  display: none;
+}
+.search__input.field__input:focus {
+  box-shadow: unset;
+  outline: unset;
+  outline-offset: unset;
+}
+.reset__button:not(:focus-visible)::after .search__button {
+  display: none;
+} 
+.card__information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.field:after {
+  box-shadow: unset !important;
+}
+@media(max-width:990px) {
+  .EzfyHeaderSearch--mobile {
+    margin-top: 0 !important;
+  }
+}
+.icon.icon-search {
+  color: #d2d2d2;
+}

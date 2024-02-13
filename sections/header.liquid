@@ -318,6 +318,11 @@
         {%- endcase -%}
       {%- endfor -%}
 
+      {% comment %} <button class="search__button mobile_field__button" aria-label="{{ 'general.search.search' | t }}">
+        <svg class="icon icon-search" aria-hidden="true" focusable="false">
+          <use href="#icon-search">
+        </svg>
+      </button> {% endcomment %}
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {%- liquid
           if cart == empty
@@ -336,6 +341,7 @@
           </div>
         {%- endif -%}
       </a>
+
     </div>
   </header>
   {% render 'ezfy-header-search', input_id: 'Search-In-Modal', device: 'mobile' %}
