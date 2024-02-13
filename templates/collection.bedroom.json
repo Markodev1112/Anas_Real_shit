@@ -1,0 +1,160 @@
+{
+  "sections": {
+    "ss_circle_menu_wdhQkx": {
+      "type": "ss-circle-menu",
+      "blocks": {
+        "image_XWEhxr": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/beds.webp",
+            "bubble_text": "Beds",
+            "bubble_link": "shopify:\/\/collections\/beds"
+          }
+        },
+        "image_fbKYHK": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/mattresses.jpg",
+            "bubble_text": "Mattresses",
+            "bubble_link": "shopify:\/\/collections\/mattresses"
+          }
+        },
+        "image_3QnAn6": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/dressing_table.jpg",
+            "bubble_text": "Dressing Table",
+            "bubble_link": "shopify:\/\/collections\/dressing-table"
+          }
+        },
+        "image_ha9Lrn": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/night_stand.webp",
+            "bubble_text": "Night Stands",
+            "bubble_link": "shopify:\/\/collections\/night-stands"
+          }
+        }
+      },
+      "block_order": [
+        "image_XWEhxr",
+        "image_fbKYHK",
+        "image_3QnAn6",
+        "image_ha9Lrn"
+      ],
+      "settings": {
+        "hide_mobile": false,
+        "hide_desktop": false,
+        "mobile_content_alignment": "center",
+        "icon_size": 100,
+        "icon_size_mobile": 66,
+        "text_size": 14,
+        "text_color": "#121212",
+        "heading_custom": false,
+        "heading_font": "poppins_n4",
+        "border_size": 3,
+        "ring_color": "#121212",
+        "background_gradient": "",
+        "square_image": false,
+        "background-color": "#ffffff",
+        "padding_top": 20,
+        "padding_bottom": 12
+      }
+    },
+    "ss_circle_menu_DUAdgV": {
+      "type": "ss-circle-menu",
+      "blocks": {
+        "image_pNL6fM": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/bedroom_sets.jpg",
+            "bubble_text": "Bedroom Sets",
+            "bubble_link": "shopify:\/\/collections\/bedroom-sets"
+          }
+        },
+        "image_fCGeFa": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/wardrobes.jpg",
+            "bubble_text": "Wardrobes",
+            "bubble_link": "shopify:\/\/collections\/wardrobes"
+          }
+        },
+        "image_CWxWit": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/bean_bags.webp",
+            "bubble_text": "Bean Bags",
+            "bubble_link": "shopify:\/\/collections\/bean-bags"
+          }
+        },
+        "image_BPQekL": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/Screenshot_2024-02-02_at_5.18.42_AM.png",
+            "bubble_text": "Bedroom lights",
+            "bubble_link": "shopify:\/\/collections\/bedroom-lights"
+          }
+        }
+      },
+      "block_order": [
+        "image_pNL6fM",
+        "image_fCGeFa",
+        "image_CWxWit",
+        "image_BPQekL"
+      ],
+      "settings": {
+        "hide_mobile": false,
+        "hide_desktop": false,
+        "mobile_content_alignment": "center",
+        "icon_size": 100,
+        "icon_size_mobile": 60,
+        "text_size": 12,
+        "text_color": "#121212",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "border_size": 2,
+        "ring_color": "#121212",
+        "background_gradient": "",
+        "square_image": false,
+        "background-color": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "ss_circle_menu_wdhQkx",
+    "ss_circle_menu_DUAdgV",
+    "banner",
+    "product-grid"
+  ]
+}

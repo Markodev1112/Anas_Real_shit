@@ -1,0 +1,418 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "2ee40841-9e64-408d-b874-0f06036decd8": {
+      "type": "ss-scrolling-images-2",
+      "blocks": {
+        "sections--16906951655679__2ee40841-9e64-408d-b874-0f06036decd8-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snaptik.app_7295165982430088494.gif",
+            "text": "Tay Tippet"
+          }
+        },
+        "sections--16906951655679__2ee40841-9e64-408d-b874-0f06036decd8-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snaptik.app_7304727088135736608.gif",
+            "text": "Taja Keasel"
+          }
+        },
+        "sections--16906951655679__2ee40841-9e64-408d-b874-0f06036decd8-image-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snaptik.app_7109530702999194886_1.gif",
+            "text": "Joshu"
+          }
+        },
+        "sections--16906951655679__2ee40841-9e64-408d-b874-0f06036decd8-image-4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snaptik.app_7165570314250751238_1.gif",
+            "text": "Jovan"
+          }
+        },
+        "sections--16906951655679__2ee40841-9e64-408d-b874-0f06036decd8-image-5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snaptik.app_7224683019150298414.gif",
+            "text": "Brianna"
+          }
+        },
+        "54383cd0-d5fa-44af-ad1d-1755f8eabe31": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snaptik.app_7302898328029695262.gif",
+            "text": "Anna"
+          }
+        },
+        "de23079c-e2c9-4741-9358-345c5789764b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snaptik.app_7286654640580562219.gif",
+            "text": "Avery"
+          }
+        },
+        "1ea64da2-2911-4bd8-b4cb-ad7ddb6d4ad4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snaptik.app_7277289974792211754.gif",
+            "text": "Aisha"
+          }
+        },
+        "1da0b7ce-5926-4349-b370-9f0be5573d57": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snaptik.app_7262802343023070510.gif",
+            "text": "Sofia"
+          }
+        },
+        "f2105366-9f07-4886-a86a-17f6fde90586": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snaptik.app_7297896829453094176.gif",
+            "text": "Leona"
+          }
+        }
+      },
+      "block_order": [
+        "sections--16906951655679__2ee40841-9e64-408d-b874-0f06036decd8-image-1",
+        "sections--16906951655679__2ee40841-9e64-408d-b874-0f06036decd8-image-2",
+        "sections--16906951655679__2ee40841-9e64-408d-b874-0f06036decd8-image-3",
+        "sections--16906951655679__2ee40841-9e64-408d-b874-0f06036decd8-image-4",
+        "sections--16906951655679__2ee40841-9e64-408d-b874-0f06036decd8-image-5",
+        "54383cd0-d5fa-44af-ad1d-1755f8eabe31",
+        "de23079c-e2c9-4741-9358-345c5789764b",
+        "1ea64da2-2911-4bd8-b4cb-ad7ddb6d4ad4",
+        "1da0b7ce-5926-4349-b370-9f0be5573d57",
+        "f2105366-9f07-4886-a86a-17f6fde90586"
+      ],
+      "settings": {
+        "heading": "<p>Trusted by Many CavePeople 🏠<\/p>",
+        "heading_custom": false,
+        "heading_font": "poppins_n4",
+        "heading_size": 40,
+        "heading_height": 130,
+        "heading_align": "center",
+        "slider_speed": 20,
+        "slider_gap": 100,
+        "slider_gap_mobile": 10,
+        "slider_mt": 50,
+        "slider_direction": "left",
+        "pause_hover": false,
+        "slide_padding_top": 0,
+        "slide_padding_top_mobile": 75,
+        "card_width": 260,
+        "card_width_mobile": 230,
+        "card_padding_vertical": 10,
+        "card_padding_horizontal": 10,
+        "card_radius": 8,
+        "use_shadow": true,
+        "image_ratio": "square",
+        "image_radius": 0,
+        "text_custom": false,
+        "text_font": "assistant_n4",
+        "text_size": 14,
+        "text_height": 130,
+        "text_mt": 10,
+        "heading_color": "#000000",
+        "card_bg": "#ffffff",
+        "background_color": "#f4f4f4",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "9b52d7cf-0bda-4c4b-bd30-24eb538f66e3": {
+      "type": "ss-scrolling-images-2",
+      "blocks": {
+        "sections--16906951655679__9b52d7cf-0bda-4c4b-bd30-24eb538f66e3-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snaptik.app_7311407094702427434.gif",
+            "text": "Ruby"
+          }
+        },
+        "sections--16906951655679__9b52d7cf-0bda-4c4b-bd30-24eb538f66e3-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snaptik.app_7308253413094214918.gif",
+            "text": "Louiseya"
+          }
+        },
+        "sections--16906951655679__9b52d7cf-0bda-4c4b-bd30-24eb538f66e3-image-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snaptik.app_7240470042331319598.gif",
+            "text": "Mathew"
+          }
+        },
+        "sections--16906951655679__9b52d7cf-0bda-4c4b-bd30-24eb538f66e3-image-4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snaptik.app_7266606245816175904.gif",
+            "text": "Dais"
+          }
+        },
+        "sections--16906951655679__9b52d7cf-0bda-4c4b-bd30-24eb538f66e3-image-5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snaptik.app_7304319506472504619.gif",
+            "text": "Bassem & Nouran"
+          }
+        },
+        "0b53759c-6e7a-4acc-8e63-317b5b4fdb18": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snaptik.app_7253935454091857195.gif",
+            "text": "Sydney"
+          }
+        },
+        "5cd23642-5fd8-47ee-a1eb-972437b23816": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snaptik.app_7120380351301569834.gif",
+            "text": "Roni"
+          }
+        },
+        "837c03f0-af76-4d7d-9c92-08b89167dd51": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snaptik.app_7184876000981912874.gif",
+            "text": "Bella"
+          }
+        },
+        "fd8e8ce2-9f51-4e65-8e00-226a66331584": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snaptik.app_7291067318342339882.gif",
+            "text": "Pau Torres"
+          }
+        },
+        "2e67a0fb-47f8-4e6c-be77-8127f3e41549": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snaptik.app_7262093126574066987.gif",
+            "text": "Ariel"
+          }
+        },
+        "2afee2ac-c9b8-4ec5-962e-460cee1534a9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snaptik.app_7291605186395540738.gif",
+            "text": "Mary"
+          }
+        }
+      },
+      "block_order": [
+        "sections--16906951655679__9b52d7cf-0bda-4c4b-bd30-24eb538f66e3-image-1",
+        "sections--16906951655679__9b52d7cf-0bda-4c4b-bd30-24eb538f66e3-image-2",
+        "sections--16906951655679__9b52d7cf-0bda-4c4b-bd30-24eb538f66e3-image-3",
+        "sections--16906951655679__9b52d7cf-0bda-4c4b-bd30-24eb538f66e3-image-4",
+        "sections--16906951655679__9b52d7cf-0bda-4c4b-bd30-24eb538f66e3-image-5",
+        "0b53759c-6e7a-4acc-8e63-317b5b4fdb18",
+        "5cd23642-5fd8-47ee-a1eb-972437b23816",
+        "837c03f0-af76-4d7d-9c92-08b89167dd51",
+        "fd8e8ce2-9f51-4e65-8e00-226a66331584",
+        "2e67a0fb-47f8-4e6c-be77-8127f3e41549",
+        "2afee2ac-c9b8-4ec5-962e-460cee1534a9"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 40,
+        "heading_height": 130,
+        "heading_align": "center",
+        "slider_speed": 51,
+        "slider_gap": 90,
+        "slider_gap_mobile": 14,
+        "slider_mt": 55,
+        "slider_direction": "left",
+        "pause_hover": false,
+        "slide_padding_top": 0,
+        "slide_padding_top_mobile": 50,
+        "card_width": 260,
+        "card_width_mobile": 230,
+        "card_padding_vertical": 20,
+        "card_padding_horizontal": 10,
+        "card_radius": 8,
+        "use_shadow": true,
+        "image_ratio": "square",
+        "image_radius": 0,
+        "text_custom": false,
+        "text_font": "assistant_n4",
+        "text_size": 14,
+        "text_height": 130,
+        "text_mt": 10,
+        "heading_color": "#000000",
+        "card_bg": "#ffffff",
+        "background_color": "#f4f4f4",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "39caf267-4dec-4dde-9d8a-64429594e5d7": {
+      "type": "ss-simple-faq",
+      "blocks": {
+        "sections--16906951655679__39caf267-4dec-4dde-9d8a-64429594e5d7-text-1": {
+          "type": "text",
+          "settings": {
+            "question": "What is CaveHubs?",
+            "answer": "<p><em>CaveHubs is your home delivery service, bringing a variety of products directly to your doorstep. We call it CaveHubs because we believe in making your home, your cave, a central hub for convenience. From everyday essentials to special items, we aim to simplify your life by delivering quality products to your home.<\/em><\/p>"
+          }
+        },
+        "sections--16906951655679__39caf267-4dec-4dde-9d8a-64429594e5d7-text-2": {
+          "type": "text",
+          "settings": {
+            "question": "Is this Free Shipping?",
+            "answer": "<p><em>\"Yes! Good news – shipping is on us! Your order comes with<\/em><em><strong> free shipping<\/strong><\/em><em> because you matter to us. It's our way of saying thank you for choosing CaveHubs. Happy shopping!\"<\/em><\/p>"
+          }
+        },
+        "9d253ae0-2f65-4824-a92b-a7301e9a9fd9": {
+          "type": "text",
+          "settings": {
+            "question": "What's the return\/exchange policy for delivered products?",
+            "answer": "<p><em>\"Refund and return requests are accepted within 24 hours of purchase. Once the product is delivered, no returns or refunds are possible unless reported within the initial 24-hour period.\"<\/em><\/p>"
+          }
+        },
+        "c4ba7abd-95bf-4002-8e15-62eb76aeb58f": {
+          "type": "text",
+          "settings": {
+            "question": "Which country you are delivering products?",
+            "answer": "<p><em>Currently, we are <\/em><em><strong>delighted<\/strong><\/em><em> to exclusively offer our free home delivery services in the<\/em><em><strong> UAE<\/strong><\/em><em>, a place that has a <\/em><em><strong>special <\/strong><\/em><em>significance for us. We appreciate your understanding and look forward to extending our <\/em><em><strong>services<\/strong><\/em><em> to more locations in the future. Thank you for choosing <\/em><em><strong>CaveHubs<\/strong><\/em><em>!<\/em><\/p>"
+          }
+        },
+        "e3dceb34-c065-4795-ae24-081b733ebe62": {
+          "type": "text",
+          "settings": {
+            "question": "What happens once the order has been submitted?",
+            "answer": "<p><em>After the <\/em><em><strong>successful<\/strong><\/em><em> submission of your order, you will receive an order confirmation at the <\/em><em><strong>provided<\/strong><\/em><em> email address. Our <\/em><em><strong>team<\/strong><\/em><em> will promptly handle the processing and <\/em><em><strong>dispatch<\/strong><\/em><em> of the orders, guaranteeing delivery within the <\/em><em><strong>committed <\/strong><\/em><em>timeline.<\/em><\/p>"
+          }
+        },
+        "3f7fd738-28e0-41f0-a820-068faeff8e16": {
+          "type": "text",
+          "settings": {
+            "question": "Is it possible to track my order, and if so, how can I do it?",
+            "answer": "<p><em>Absolutely, you can track your <\/em><em><strong>home <\/strong><\/em><em>delivery! We'll send you email notifications with <\/em><em><strong>consistent<\/strong><\/em><em> updates on your products, ensuring you are <\/em><em><strong>well-informed<\/strong><\/em><em> at each stage of the process.<\/em><\/p>"
+          }
+        },
+        "1241258f-cc7e-4e1a-aa88-351a49772978": {
+          "type": "text",
+          "settings": {
+            "question": "What happens if I enter an incorrect address",
+            "answer": "<p><em>If you i<\/em><em><strong>dentify<\/strong><\/em><em> any errors in the address you have provided, kindly send us an immediate email for necessary corrections before the <\/em><em><strong>shipment<\/strong><\/em><em>. Regrettably, we are unable to provide compensation for delivery failures resulting from an 'incorrect or incomplete address.'' Nevertheless, please be assured that in rare instances, we will make an attempt for <\/em><em><strong>redelivery<\/strong><\/em><em> the following day. Your <\/em><em><strong>cooperation<\/strong><\/em><em> is crucial for ensuring a more streamlined <\/em><em><strong>delivery<\/strong><\/em><em> process. Thank you for your understanding.<\/em><\/p>"
+          }
+        },
+        "e9c74c47-b24f-478e-8c7f-751e409eb5ba": {
+          "type": "text",
+          "settings": {
+            "question": "What steps should I take if the items from my CaveHubs order go missing or are stolen?",
+            "answer": "<p><em>Upon receiving <\/em><em><strong>confirmation <\/strong><\/em><em>from our logistics team that the item has been successfully delivered to our clients, <\/em><em><strong>CaveHub<\/strong><\/em><em> holds no <\/em><em><strong>responsibility<\/strong><\/em><em> for the item if it is reported as lost or stolen by the clients.<\/em><\/p>"
+          }
+        },
+        "1384350f-44ec-475c-9642-c0963b7c7661": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "question": "Do you offer bulk sales to sellers in the UAE? If so, am I allowed to specify the products for purchase?",
+            "answer": "<p><em>Absolutely! If you have specific quantity needs, feel free to get in touch with us via email or <\/em><em><strong>WhatsApp<\/strong><\/em><em>. We are eager to assist and provide you with a customized <\/em><em><strong>quotation<\/strong><\/em><em>.<\/em><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "sections--16906951655679__39caf267-4dec-4dde-9d8a-64429594e5d7-text-1",
+        "sections--16906951655679__39caf267-4dec-4dde-9d8a-64429594e5d7-text-2",
+        "9d253ae0-2f65-4824-a92b-a7301e9a9fd9",
+        "c4ba7abd-95bf-4002-8e15-62eb76aeb58f",
+        "e3dceb34-c065-4795-ae24-081b733ebe62",
+        "3f7fd738-28e0-41f0-a820-068faeff8e16",
+        "1241258f-cc7e-4e1a-aa88-351a49772978",
+        "e9c74c47-b24f-478e-8c7f-751e409eb5ba",
+        "1384350f-44ec-475c-9642-c0963b7c7661"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "icon_color": "#ffffff",
+        "hover_color": "#efefef",
+        "question_color": "#121212",
+        "background_color": "#d5caa6",
+        "answer_color": "#000000",
+        "answer_bg_color": "#ffffff",
+        "questions-font-size": 1.6
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "8d8af0d3-5d01-400a-8cc6-269404543ea3": {
+          "type": "text",
+          "settings": {
+            "heading": "<strong>Transform Your Cave with Cozy Living<\/strong>",
+            "subtext": "<p><em>\"Enhance Your Comfort: Make Your <\/em><em><strong>Cave <\/strong><\/em><em>Uniquely Yours with Our Essentials Selections for Ultimate Coziness.\"<\/em><\/p>"
+          }
+        },
+        "15c9a3b2-48fc-404f-89b6-981444b5bb5b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Font_Change_-_1_24b01903-438a-4940-b1f2-2f095e842629.png",
+            "image_width": 375,
+            "alignment": "center"
+          }
+        },
+        "b5ccbb93-1c4d-4040-9ea6-3594f51de2e9": {
+          "type": "text",
+          "settings": {
+            "heading": "<strong>Support<\/strong>",
+            "subtext": "<p><a href=\"\/policies\/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\">Shipping Policy<\/a><\/p><p><a href=\"\/policies\/refund-policy\" title=\"Refund Policy\">Refund Policy<\/a><\/p><p><a href=\"\/policies\/privacy-policy\" title=\"Privacy Policy\">Privacy Policy<\/a><\/p><p><a href=\"\/policies\/terms-of-service\" title=\"Terms of Service\">Terms of Service <\/a><\/p><p><a href=\"\/policies\/contact-information\" title=\"Contact Information\">Contact Us<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "8d8af0d3-5d01-400a-8cc6-269404543ea3",
+        "15c9a3b2-48fc-404f-89b6-981444b5bb5b",
+        "b5ccbb93-1c4d-4040-9ea6-3594f51de2e9"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "newsletter_enable": false,
+        "newsletter_heading": "",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "2ee40841-9e64-408d-b874-0f06036decd8",
+    "9b52d7cf-0bda-4c4b-bd30-24eb538f66e3",
+    "39caf267-4dec-4dde-9d8a-64429594e5d7",
+    "footer"
+  ]
+}

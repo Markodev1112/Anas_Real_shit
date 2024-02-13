@@ -1,0 +1,142 @@
+{
+  "sections": {
+    "ss_circle_menu_zU34B7": {
+      "type": "ss-circle-menu",
+      "blocks": {
+        "image_RGLjWH": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/console.jpg",
+            "bubble_text": "Console Tables",
+            "bubble_link": "shopify:\/\/collections\/console-tables-1"
+          }
+        },
+        "image_39PzNg": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/cabinets.jpg",
+            "bubble_text": "Cabinets",
+            "bubble_link": "shopify:\/\/collections\/cabinets"
+          }
+        },
+        "image_gg3qkr": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/ottomans.jpg",
+            "bubble_text": "Ottomans",
+            "bubble_link": "shopify:\/\/collections\/ottomans"
+          }
+        }
+      },
+      "block_order": [
+        "image_RGLjWH",
+        "image_39PzNg",
+        "image_gg3qkr"
+      ],
+      "settings": {
+        "hide_mobile": false,
+        "hide_desktop": false,
+        "mobile_content_alignment": "center",
+        "icon_size": 100,
+        "icon_size_mobile": 74,
+        "text_size": 16,
+        "text_color": "#121212",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "border_size": 2,
+        "ring_color": "#121212",
+        "background_gradient": "",
+        "square_image": false,
+        "background-color": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ss_circle_menu_aJmMxK": {
+      "type": "ss-circle-menu",
+      "blocks": {
+        "image_fP74Nz": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/room_dividers.jpg",
+            "bubble_text": "Room Dividers",
+            "bubble_link": "shopify:\/\/collections\/room-dividers"
+          }
+        },
+        "image_y7Jjeb": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/bean_bags_9d46b7c5-4357-4746-901a-544836171254.webp",
+            "bubble_text": "Bean Bags",
+            "bubble_link": "shopify:\/\/collections\/bean-bags"
+          }
+        },
+        "image_kjgPcV": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/bamboo.jpg",
+            "bubble_text": "Bamboo Benches",
+            "bubble_link": "shopify:\/\/collections\/bamboo-benches"
+          }
+        }
+      },
+      "block_order": [
+        "image_fP74Nz",
+        "image_y7Jjeb",
+        "image_kjgPcV"
+      ],
+      "settings": {
+        "hide_mobile": false,
+        "hide_desktop": false,
+        "mobile_content_alignment": "center",
+        "icon_size": 100,
+        "icon_size_mobile": 66,
+        "text_size": 12,
+        "text_color": "#121212",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "border_size": 2,
+        "ring_color": "#121212",
+        "background_gradient": "",
+        "square_image": false,
+        "background-color": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "ss_circle_menu_zU34B7",
+    "ss_circle_menu_aJmMxK",
+    "banner",
+    "product-grid"
+  ]
+}

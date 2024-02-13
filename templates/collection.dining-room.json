@@ -1,0 +1,107 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "ss_circle_menu_T4cQFi": {
+      "type": "ss-circle-menu",
+      "blocks": {
+        "image_Dmp6V4": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/Dining_table.jpg",
+            "bubble_text": "Dining Tables",
+            "bubble_link": "shopify:\/\/collections\/dining-tables"
+          }
+        },
+        "image_pEdD9N": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/dining_chairs.webp",
+            "bubble_text": "Dining Chairs",
+            "bubble_link": "shopify:\/\/collections\/dining-chairs"
+          }
+        },
+        "image_dPgNHM": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/buffets_and_sideboards.jpg",
+            "bubble_text": "Buffets & Sideboards",
+            "bubble_link": "shopify:\/\/collections\/buffets-sideboards"
+          }
+        },
+        "image_Y3yF7N": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/dining_sets.jpg",
+            "bubble_text": "Dining Sets",
+            "bubble_link": "shopify:\/\/collections\/dining-set"
+          }
+        },
+        "image_rzUPjU": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/dining_room_lights.jpg",
+            "bubble_text": "Dining Room Lights",
+            "bubble_link": "shopify:\/\/collections\/dining-room-lights"
+          }
+        }
+      },
+      "block_order": [
+        "image_Dmp6V4",
+        "image_pEdD9N",
+        "image_dPgNHM",
+        "image_Y3yF7N",
+        "image_rzUPjU"
+      ],
+      "settings": {
+        "hide_mobile": false,
+        "hide_desktop": false,
+        "mobile_content_alignment": "center",
+        "icon_size": 100,
+        "icon_size_mobile": 56,
+        "text_size": 12,
+        "text_color": "#121212",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "border_size": 2,
+        "ring_color": "#121212",
+        "background_gradient": "",
+        "square_image": false,
+        "background-color": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "ss_circle_menu_T4cQFi",
+    "product-grid"
+  ]
+}

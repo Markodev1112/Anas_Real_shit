@@ -1,0 +1,89 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "header": {
+      "type": "header",
+      "settings": {
+        "logo_position": "top-center",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "color_scheme": "background-1",
+        "menu_color_scheme": "background-1",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "ac64b496-d5b2-4e01-9ce3-4be0504b725a": {
+      "type": "ss-scrolling-announcement-bar",
+      "blocks": {
+        "sections--16906951688447__ac64b496-d5b2-4e01-9ce3-4be0504b725a-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "FREE SHIPPING"
+          }
+        },
+        "sections--16906951688447__ac64b496-d5b2-4e01-9ce3-4be0504b725a-text-2": {
+          "type": "text",
+          "settings": {
+            "text": "CAVEMAN & CAVEWOMAN OFFERS"
+          }
+        },
+        "ee6beec7-868f-46da-83da-c4a806899dbe": {
+          "type": "text",
+          "settings": {
+            "text": "556,352+Trusted customers per day"
+          }
+        },
+        "8d390f14-36d5-4e75-a70a-2f3e14ce04fe": {
+          "type": "text",
+          "settings": {
+            "text": "BLACK FRIDAY SALE 50% OFF"
+          }
+        },
+        "4e64f7e9-257e-4145-85d1-3ad1ea14767b": {
+          "type": "text",
+          "settings": {
+            "text": "UAE"
+          }
+        },
+        "ffa85966-56b3-42e9-93cb-022f48be0ba2": {
+          "type": "text",
+          "settings": {
+            "text": "24 Hours Delivery"
+          }
+        }
+      },
+      "block_order": [
+        "sections--16906951688447__ac64b496-d5b2-4e01-9ce3-4be0504b725a-text-1",
+        "sections--16906951688447__ac64b496-d5b2-4e01-9ce3-4be0504b725a-text-2",
+        "ee6beec7-868f-46da-83da-c4a806899dbe",
+        "8d390f14-36d5-4e75-a70a-2f3e14ce04fe",
+        "4e64f7e9-257e-4145-85d1-3ad1ea14767b",
+        "ffa85966-56b3-42e9-93cb-022f48be0ba2"
+      ],
+      "settings": {
+        "insert_css_class_target": ".header, .pageheader, .section-header, #announcement, .toolbar, .header__wrapper",
+        "text_size": 13,
+        "ss_font_family": "poppins_n4",
+        "link": "",
+        "animation_duration": 106,
+        "bg": "#121212",
+        "text_color": "#ffffff",
+        "hover_opacity": 85,
+        "padding_horizontal": 2,
+        "padding_vertical": 1.5
+      }
+    }
+  },
+  "order": [
+    "header",
+    "ac64b496-d5b2-4e01-9ce3-4be0504b725a"
+  ]
+}

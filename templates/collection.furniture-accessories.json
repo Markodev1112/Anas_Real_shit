@@ -1,0 +1,107 @@
+{
+  "sections": {
+    "ss_circle_menu_cPw8LL": {
+      "type": "ss-circle-menu",
+      "blocks": {
+        "image_a3AtWz": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/rugs_and_carpets.jpg",
+            "bubble_text": "Rugs & Carpets",
+            "bubble_link": "shopify:\/\/collections\/rugs-carpets"
+          }
+        },
+        "image_RwA8Bz": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/pillow.jpg",
+            "bubble_text": "Pillows & Bedsheets",
+            "bubble_link": "shopify:\/\/collections\/pillows-and-bedsheets"
+          }
+        },
+        "image_NYjL69": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/Screenshot_2024-02-04_at_2.46.57_AM.png",
+            "bubble_text": "Entry Lights",
+            "bubble_link": "shopify:\/\/collections\/entry-lights"
+          }
+        },
+        "image_QCc8ew": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/Mirror.jpg",
+            "bubble_text": "Mirror",
+            "bubble_link": "shopify:\/\/collections\/mirror"
+          }
+        },
+        "image_3DqKQ9": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/Wall_Art.jpg",
+            "bubble_text": "Wall Art",
+            "bubble_link": "shopify:\/\/collections\/wall-arts"
+          }
+        }
+      },
+      "block_order": [
+        "image_a3AtWz",
+        "image_RwA8Bz",
+        "image_NYjL69",
+        "image_QCc8ew",
+        "image_3DqKQ9"
+      ],
+      "settings": {
+        "hide_mobile": false,
+        "hide_desktop": false,
+        "mobile_content_alignment": "center",
+        "icon_size": 100,
+        "icon_size_mobile": 56,
+        "text_size": 12,
+        "text_color": "#121212",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "border_size": 2,
+        "ring_color": "#121212",
+        "background_gradient": "",
+        "square_image": false,
+        "background-color": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 32,
+        "padding_bottom": 44
+      }
+    }
+  },
+  "order": [
+    "ss_circle_menu_cPw8LL",
+    "banner",
+    "product-grid"
+  ]
+}
