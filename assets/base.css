@@ -707,11 +707,11 @@ summary::-webkit-details-marker {
   box-shadow: none;
 }
 
-*:focus-visible {
+/* *:focus-visible {
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   outline-offset: 0.3rem;
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
-}
+} */
 
 /* Fallback - for browsers that don't support :focus-visible, a fallback is set for :focus */
 .focused,
@@ -3540,22 +3540,22 @@ background: #784a80 !important;
 span.badge.price__badge-sale{
 background: #784a80 !important;
 }
+
 /* custom css */
 .card__inner {
   height: 300px !important;
 }
 .card .media {
   height: 300px !important;
+  background-color: #fff;
 }
 .card__media .media img {
   object-fit: scale-down !important;
+  padding: 0 !important;
 }
-.card .media {
-  background-color: #fff;
-}
+
 @media(max-width:768px) {
   .card__media .media img {
-    width: 160px !important;
     height: 100% !important;
   }
 }
@@ -3606,19 +3606,11 @@ background: #784a80 !important;
 .field__input:focus~.field__label{
   display: none !important;
 }
-.search__input.field__input:focus-visible {
-  box-shadow: unset;
-  outline: unset;
-  outline-offset: unset;
-}
+
 .field__input:not(:placeholder-shown)~.field__label {
   display: none;
 }
-.search__input.field__input:focus {
-  box-shadow: unset;
-  outline: unset;
-  outline-offset: unset;
-}
+
 .reset__button:not(:focus-visible)::after .search__button {
   display: none;
 } 
@@ -3641,3 +3633,4 @@ background: #784a80 !important;
 .media>img {
   transition: opacity .1s cubic-bezier(.25, .46, .45, .94) !important;
 }
+
