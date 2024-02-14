@@ -3542,10 +3542,10 @@ background: #784a80 !important;
 }
 /* custom css */
 .card__inner {
-  height: 300px;
+  height: 300px !important;
 }
 .card .media {
-  height: 300px;
+  height: 300px !important;
 }
 .card__media .media img {
   object-fit: scale-down !important;
@@ -3637,4 +3637,7 @@ background: #784a80 !important;
 }
 .icon.icon-search {
   color: #d2d2d2;
+}
+.media>img {
+  transition: opacity .1s cubic-bezier(.25, .46, .45, .94) !important;
 }
