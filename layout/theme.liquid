@@ -98,6 +98,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="{{ 'swiper.js' | asset_url }}" defer="defer"></script>
+    {{ 'swiper.css' | asset_url | stylesheet_tag }}
+
 
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
