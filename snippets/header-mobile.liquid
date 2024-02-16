@@ -1,0 +1,33 @@
+<header-mobile class="mobile-header">
+    <nav class="menu-mobile">
+        <ul role="list">
+            {%- for link in section.settings.menu.links -%}
+            <li>
+                {%- if link.links != blank -%}
+                <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
+                    <summary
+                    id="HeaderDrawer-{{ link.handle }}"
+                    class="mobile-link-title"
+                    >
+                        <a class="mobile-title-link" href="{{  link.url}}">
+                        {{ link.title | escape }}                    
+                        </a>
+                    </summary>                    
+                </details>
+                {%- else -%}
+                <a
+                    id="HeaderDrawer-{{ link.handle }}"
+                    href="{{ link.url }}"
+                    class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"
+                    {% if link.current %}
+                    aria-current="page"
+                    {% endif %}
+                >
+                    {{ link.title | escape }}
+                </a>
+                {%- endif -%}
+            </li>
+            {%- endfor -%}
+        </ul>
+    </nav>
+</header-mobile>

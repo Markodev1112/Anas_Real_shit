@@ -91,6 +91,81 @@
   .header {
     padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
   }
+  .mobile-header {
+    display: none;
+  }
+
+  @media(max-width:768px) {
+    .custom-header {
+      background-image:url("{{ section.settings.header_bg_img | img_url: 'master' }}");
+      background-size: cover;
+    }
+    .mobile-header {
+      display: block;
+    }
+    .custom-header .header__heading {
+      display: none;
+    }
+    .custom-header .header__icons {
+      display: none;
+    }
+    .EzfyHeaderSearch--mobile {
+      margin-top: 10px !important;
+    }
+    .custom-header {
+      padding: 10px !important;
+    }
+    .custom-header .menu-mobile {
+      margin-top: 15px;
+    }
+
+    .custom-header .menu-mobile ul {
+      padding: 0;
+      display: flex;
+      margin: 0;
+      width: 100%;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .custom-header .menu-mobile ul li {
+      list-style: none;
+      font-size: 14px;
+      width: 30%;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 5px;
+      background-color: #fff;
+    }
+    .custom-header .menu-mobile li:hover {
+      background-color: #faf613;
+    }
+    .custom-header .mobile-title-link {
+      text-decoration: none;
+      color: #000;
+    }
+    .EzfyHeaderSearch--mobile {
+      width: 100%;
+    }
+    .custom-header .field__label {
+      font-size: 16px;
+      color: #bfbdbd;
+      font-family: sans-serif;
+      left: 40px;
+      line-height: 25px;
+      font-weight: 400;  
+      left: 35px;
+       
+    }
+    .custom-header .field__input:focus~.field__label {
+      display: none !important;
+    }
+    .custom-header .header__heading-link {
+      margin-top: 10px;
+    }
+  }
 
   .section-header {
     position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
@@ -156,14 +231,21 @@
       assign localization_forms = true
     endif
   -%}
-  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
-    {%- liquid
+  <header class="custom-header header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
+    {% comment %} {%- liquid
       if section.settings.menu != blank
         render 'header-drawer'
       endif
 
       if section.settings.logo_position == 'top-center' or section.settings.menu == blank
       render 'ezfy-header-search', input_id: 'Search-In-Modal', device: 'desktop'
+      endif
+    -%} {% endcomment %}
+    
+    {% comment %} custom header on mobile {% endcomment %}
+    {%- liquid
+      if section.settings.menu != blank
+        render 'header-mobile'
       endif
     -%}
 
@@ -237,7 +319,7 @@
       {%- endif -%}
     {%- endif -%}
 
-    <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
+    <div class=" header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
       <div class="desktop-localization-wrapper">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
           <noscript class="small-hide medium-hide">
@@ -317,12 +399,6 @@
             {% render block %}
         {%- endcase -%}
       {%- endfor -%}
-
-      {% comment %} <button class="search__button mobile_field__button" aria-label="{{ 'general.search.search' | t }}">
-        <svg class="icon icon-search" aria-hidden="true" focusable="false">
-          <use href="#icon-search">
-        </svg>
-      </button> {% endcomment %}
       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {%- liquid
           if cart == empty
@@ -343,8 +419,8 @@
       </a>
 
     </div>
+    {% render 'ezfy-header-search', input_id: 'Search-In-Modal', device: 'mobile' %}
   </header>
-  {% render 'ezfy-header-search', input_id: 'Search-In-Modal', device: 'mobile' %}
   
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
@@ -527,6 +603,11 @@
   "class": "section-header",
   "max_blocks": 3,
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "header_bg_img",
+      "label": "Background Image"
+    },
     {
       "type": "select",
       "id": "logo_position",

@@ -22,6 +22,12 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+  .custom-collection-list .mobile .card-wrapper {
+      width: 100%;
+  }
+  .custom-collection-list .mobile li {
+    padding: 0 5px;
+  }
 }
 
 .collection-list__item:only-child {
@@ -59,3 +65,4 @@
 .collection-list-view-all {
   margin-top: 2rem;
 }
+

@@ -5,7 +5,7 @@
 {% assign predictive_search_height = 500 %}
 {% assign search_box_width = 350 %}
 
-<div class="EzfyHeaderSearch EzfyHeaderSearch--{{ device }}">
+<div class="b EzfyHeaderSearch EzfyHeaderSearch--{{ device }}">
   {%- if settings.predictive_search_enabled -%}
     <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
   {%- else -%}
@@ -78,11 +78,11 @@
 
 <style>
 /* mobile */
-@media (max-width: 990px){
+@media (max-width: 768px){
   .EzfyHeaderSearch--mobile{
   display: block;
   }
-  
+
   .EzfyHeaderSearch--desktop{
   display: none;
   }
@@ -91,7 +91,7 @@
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-bottom: 10px;
-  margin-top: 20px;
+  margin-top: 0px;
   }
   
   body{
@@ -101,7 +101,7 @@
   [id] .header{
      display:flex !important;
   flex-wrap: wrap;
-  justify-content:space-between;
+  justify-content: center;
 }
 
 

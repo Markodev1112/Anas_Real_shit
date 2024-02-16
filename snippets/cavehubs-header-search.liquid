@@ -5,7 +5,7 @@
 {% assign predictive_search_height = 500 %}
 {% assign search_box_width = 350 %}
 
-<div class="EzfyHeaderSearch EzfyHeaderSearch--{{ device }}">
+<div class="a EzfyHeaderSearch EzfyHeaderSearch--{{ device }}">
   {%- if settings.predictive_search_enabled -%}
     <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
   {%- else -%}
@@ -101,7 +101,7 @@
   [id] .header{
      display:flex !important;
   flex-wrap: wrap;
-  justify-content:space-between;
+  justify-content:center;
 }
 
 

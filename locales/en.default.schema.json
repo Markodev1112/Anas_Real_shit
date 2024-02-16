@@ -742,6 +742,9 @@
         "products_to_show": {
           "label": "Maximum products to show"
         },
+        "products_to_show_mobile": {
+          "label": "Maximum products to show on mobile"
+        },
         "columns_desktop": {
           "label": "Number of columns on desktop"
         },
