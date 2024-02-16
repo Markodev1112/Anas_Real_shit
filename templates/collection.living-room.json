@@ -1,0 +1,160 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "ss_circle_menu_HfiL9U": {
+      "type": "ss-circle-menu",
+      "blocks": {
+        "image_mmVyTr": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/PRODZFRSP000000000041801_cozee_3-seater-sofa__lifestyle.webp",
+            "bubble_text": "Sofas",
+            "bubble_link": "shopify:\/\/collections\/sofas"
+          }
+        },
+        "image_7CYxHr": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/sectionals.jpg",
+            "bubble_text": "Sectionals",
+            "bubble_link": "shopify:\/\/collections\/sectionals"
+          }
+        },
+        "image_84M6Ui": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/loveseats.jpg",
+            "bubble_text": "Loveseats",
+            "bubble_link": "shopify:\/\/collections\/loveseats"
+          }
+        },
+        "image_kMfwzY": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/a.jpg",
+            "bubble_text": "Accent Chairs",
+            "bubble_link": "shopify:\/\/collections\/accent-chairs"
+          }
+        }
+      },
+      "block_order": [
+        "image_mmVyTr",
+        "image_7CYxHr",
+        "image_84M6Ui",
+        "image_kMfwzY"
+      ],
+      "settings": {
+        "hide_mobile": false,
+        "hide_desktop": false,
+        "mobile_content_alignment": "center",
+        "icon_size": 100,
+        "icon_size_mobile": 66,
+        "text_size": 12,
+        "text_color": "#121212",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "border_size": 2,
+        "ring_color": "#121212",
+        "background_gradient": "",
+        "square_image": false,
+        "background-color": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ss_circle_menu_pLDPeW": {
+      "type": "ss-circle-menu",
+      "blocks": {
+        "image_GwxKA6": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/coffee_tab_es.webp",
+            "bubble_text": "Cofee Tables",
+            "bubble_link": "shopify:\/\/collections\/coffee-tables"
+          }
+        },
+        "image_4cx3h7": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/tv_furniture_stands.jpg",
+            "bubble_text": "Tv Furniture Stands",
+            "bubble_link": "shopify:\/\/collections\/tv-furniture-stands"
+          }
+        },
+        "image_NGrbVK": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/bean_bags.jpg",
+            "bubble_text": "Bean Bags",
+            "bubble_link": "shopify:\/\/collections\/bean-bags"
+          }
+        },
+        "image_FdcADJ": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/Screenshot_2024-02-02_at_5.00.33_AM.png",
+            "bubble_text": "Living Room Lights",
+            "bubble_link": "shopify:\/\/collections\/living-room-lights"
+          }
+        }
+      },
+      "block_order": [
+        "image_GwxKA6",
+        "image_4cx3h7",
+        "image_NGrbVK",
+        "image_FdcADJ"
+      ],
+      "settings": {
+        "hide_mobile": false,
+        "hide_desktop": false,
+        "mobile_content_alignment": "center",
+        "icon_size": 100,
+        "icon_size_mobile": 66,
+        "text_size": 12,
+        "text_color": "#121212",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "border_size": 2,
+        "ring_color": "#121212",
+        "background_gradient": "",
+        "square_image": false,
+        "background-color": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "ss_circle_menu_HfiL9U",
+    "ss_circle_menu_pLDPeW",
+    "product-grid"
+  ]
+}

@@ -1,0 +1,389 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+{%- style -%}
+
+  {{  heading_font | font_face: font_display: 'swap' }}
+  
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    overflow:hidden;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .swiper {
+    width: 100wv;
+    height: auto;
+  }
+{%- endstyle -%}
+
+  {% if section.settings.heading_custom %}
+    <style>
+      .bubble_text {
+        font-family: {{ section.settings.heading_font.family }}, {{ section.settings.heading_font.fallback_families }};
+        font-weight: {{ section.settings.heading_font.weight }};
+        font-style: {{ section.settings.heading_font.style }};
+      }
+    </style>
+  {% endif %}
+
+<div class="{{ section.id }}"style="background-color:{{section.settings.background-color}};">
+  <div class="section-{{ section.id }}-padding">
+  <div class="swiper">
+    <div class="bubble-container-{{section.id}} swiper-wrapper">
+		{%- for block in section.blocks -%}
+          <div class="bubble_item swiper-slide">
+          {%- if block.settings.bubble_link -%}<a href="{{block.settings.bubble_link}}">{%- endif -%}
+              {%- if block.settings.bubble_img -%}
+                   {{ block.settings.bubble_img | image_url: width: 400 | image_tag:  alt: section.settings.feature_title }}
+              {%- else -%}
+                   {{ 'image' | placeholder_svg_tag }}
+              {%- endif -%}
+			</a>
+            <p class="bubble_text"> {{block.settings.bubble_text }} <p>
+          </div>
+      	{%- endfor -%}
+    </div>
+  </div>
+  </div>
+</div>
+
+<style>
+  
+  .swiper-slide{
+    width: auto;
+  }
+  
+  .bubble_text {
+    margin: 0;
+    font-size: {{section.settings.text_size}}px;
+    text-align: center;
+    line-height: 1.2; 
+    margin-top:5px;
+    color: {{section.settings.text_color}};
+  }
+  
+  .bubble-container-{{section.id}} {
+    display:flex;
+    max-width: 100vw;
+    justify-content:center;
+  }
+  
+  .bubble_item {
+    margin: 0 15px;
+    flex-direction: column;
+    align-items: center;
+	margin: 0 15px;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    max-width:calc({{section.settings.icon_size}}px + 10px);
+  }
+  
+  .bubble_item svg {
+    display:block;
+    {% if section.settings.square_image == false %}border-radius: 100px;{% endif %}
+    border: {{section.settings.border_size}}px {{section.settings.ring_color}} solid;
+    width:{{section.settings.icon_size}}px;
+    height:{{section.settings.icon_size}}px;
+    background-image: {{ section.settings.background_gradient }};
+  }
+  
+  .bubble_item img {
+    object-fit:cover;
+    display:block;
+    padding:{{section.settings.border_size}}px;
+    max-width:{{section.settings.icon_size}}px;
+    max-height:{{section.settings.icon_size}}px;
+    {% if section.settings.square_image == false %}border-radius: 100px;{% endif %}
+    border: {{section.settings.border_size}}px {{section.settings.ring_color}} solid;
+    background-image: {{ section.settings.background_gradient }};
+    margin: 0 auto!important;
+  }
+  
+  @media (max-width: 750px) {
+    .bubble_item svg{
+        width:  {{ section.settings.icon_size_mobile}}px;
+        height:  {{ section.settings.icon_size_mobile}}px;
+    }
+    
+    .bubble_item img {
+      	width:  {{ section.settings.icon_size_mobile}}px;
+        height: {{section.settings.icon_size_mobile}}px;
+    }
+    
+  	.bubble-container-{{section.id}} {
+        max-width: 100vw;
+        justify-content: {{section.settings.mobile_content_alignment}};
+    }
+    
+  	.bubble_item {
+        max-width: calc({{section.settings.icon_size_mobile}}px + 5px);
+		margin: 0 5px;
+  	}
+    
+    .bubble_text {
+    	font-size: calc(0.75 * {{section.settings.text_size}}px);
+        margin-top:3px;
+    }
+  
+   }
+
+   @media (max-width: 480px) {
+     .{{ section.id }} {
+       {% if section.settings.hide_mobile %}
+         display:none;
+       {% endif %}
+     }
+   }
+
+   @media (min-width: 480px) {
+     .{{ section.id }} {
+       {% if section.settings.hide_desktop %}
+         display:none;
+       {% endif %}
+     }
+   }
+</style>
+
+{% schema %}
+  {
+    "name": "SS - Circle menu",
+	"class": "section",
+	"tag": "section",
+    "settings": [
+        {
+          "type": "header",
+          "content": "Att: Save section before slider works."
+        },
+        {
+          "type": "header",
+          "content": "Hide/show on device"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_mobile",
+          "default": false,
+          "label": "Hide section on mobile"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_desktop",
+          "default": false,
+          "label": "Hide section on desktop"
+        },
+        {
+          "type": "header",
+          "content": "Mobile layout"
+        },
+        {
+          "type": "select",
+          "id": "mobile_content_alignment",
+          "options": [
+            {
+              "value": "start",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "end",
+              "label": "Right"
+            }
+          ],
+          "default": "start",
+          "label": "Mobile content alignment"
+        },
+		{
+          "type": "header",
+          "content": "Image size"
+        },
+		{
+            "type": "range",
+            "id": "icon_size",
+            "min": 10,
+            "max": 200,
+            "step": 5,
+            "unit": "px",
+            "label": "Desktop",
+            "default": 100
+        },
+        {
+            "type": "range",
+            "id": "icon_size_mobile",
+            "min": 10,
+            "max": 200,
+            "step": 2,
+            "unit": "px",
+            "label": "Mobile",
+            "default": 66
+        },
+        {
+          "type": "header",
+          "content": "Text"
+        },
+		{
+            "type": "range",
+            "id": "text_size",
+            "min": 8,
+            "max": 50,
+            "step": 2,
+            "unit": "px",
+            "label": "Size",
+            "default": 12
+        },
+        {
+            "type": "color",
+            "id": "text_color",
+            "label": "Color",
+            "default": "#121212"
+        },
+        {
+          "type": "checkbox",
+          "id": "heading_custom",
+          "label": "Use custom font",
+          "default": false
+        },
+        {
+          "type": "font_picker",
+          "id": "heading_font",
+          "label": "Font family",
+          "default": "assistant_n4"
+        },
+        {
+          "type": "header",
+          "content": "Border"
+        },
+        {
+            "type": "range",
+            "id": "border_size",
+            "min": 0,
+            "max": 5,
+            "step": 1,
+            "unit": "px",
+            "label": "Thickness",
+            "default": 2
+        },
+		{
+            "type": "color",
+            "id": "ring_color",
+            "label": "Color",
+            "default": "#121212"
+        },
+        {
+            "type": "color_background",
+            "id": "background_gradient",
+            "label": "Section background gradient"
+        },
+        {
+          "type":"checkbox",
+          "id":"square_image",
+          "label":"Square image",
+          "default":false
+        },
+		{
+          "type": "header",
+          "content": "Background color"
+        },
+	    {
+		  "type": "color",
+		  "label": "Section background color",
+		  "id": "background-color",
+		  "default": "#ffffff"
+		},
+        {
+          "type": "header",
+          "content": "Section padding"
+        },
+        {
+          "type": "range",
+          "id": "padding_top",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "unit": "px",
+          "label": "Padding top",
+          "default": 36
+        },
+        {
+          "type": "range",
+          "id": "padding_bottom",
+          "min": 0,
+          "max": 100,
+          "step": 4,
+          "unit": "px",
+          "label": "Padding bottom",
+          "default": 36
+        }
+	],
+	 "blocks": [
+        {
+          "type": "Image",
+          "name": "Bubble item",
+          "settings": [
+            {
+              "type": "image_picker",
+              "id": "bubble_img",
+              "label": "Choose image"
+            },
+			{
+              "type": "text",
+              "id": "bubble_text",
+              "label": "Text",
+			  "default":"Collection"
+            },
+			{
+              "type": "url",
+              "id": "bubble_link",
+              "label": "Link"
+            }
+          ]
+        }
+    ],
+ 	"presets": [
+      {
+        "name": "SS - Circle Menu",
+		"blocks": [
+        {
+          "type": "Image"
+        },
+        {
+          "type": "Image"
+        },
+        {
+          "type": "Image"
+        },
+		{
+          "type": "Image"
+        },
+		{
+          "type": "Image"
+        }
+        ]
+      }
+	]
+  }
+{% endschema %}
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+    new Swiper('.swiper', {
+        slidesPerView: 'auto',
+        freeMode: true,
+        simulateTouch: true,
+    });
+</script>
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

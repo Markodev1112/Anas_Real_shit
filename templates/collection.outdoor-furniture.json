@@ -1,0 +1,151 @@
+{
+  "sections": {
+    "ss_circle_menu_aGzreR": {
+      "type": "ss-circle-menu",
+      "blocks": {
+        "image_cnHTFJ": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/patio_sets.jpg",
+            "bubble_text": "Patio Sets",
+            "bubble_link": "shopify:\/\/collections\/patio-sets"
+          }
+        },
+        "image_KLFrWz": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/sectionals.jpg",
+            "bubble_text": "Sectionals",
+            "bubble_link": "shopify:\/\/collections\/sectionals"
+          }
+        },
+        "image_cqX3nz": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/foldable_chair.jpg",
+            "bubble_text": "Foldable Chairs",
+            "bubble_link": "shopify:\/\/collections\/foldable-chairs"
+          }
+        },
+        "image_xqf6GL": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/outdoor_tables.webp",
+            "bubble_text": "Outdoor Tables",
+            "bubble_link": "shopify:\/\/collections\/outdoor-tables"
+          }
+        }
+      },
+      "block_order": [
+        "image_cnHTFJ",
+        "image_KLFrWz",
+        "image_cqX3nz",
+        "image_xqf6GL"
+      ],
+      "settings": {
+        "hide_mobile": false,
+        "hide_desktop": false,
+        "mobile_content_alignment": "center",
+        "icon_size": 100,
+        "icon_size_mobile": 66,
+        "text_size": 12,
+        "text_color": "#121212",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "border_size": 2,
+        "ring_color": "#121212",
+        "background_gradient": "",
+        "square_image": false,
+        "background-color": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ss_circle_menu_fDLYWP": {
+      "type": "ss-circle-menu",
+      "blocks": {
+        "image_iJw6wi": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/dining_sets_3a4c9b42-01f6-4c15-a37d-ec6fbc59e9e7.jpg",
+            "bubble_text": "Dining Sets",
+            "bubble_link": "shopify:\/\/collections\/dining-set"
+          }
+        },
+        "image_z6cReH": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/bean_bags.webp",
+            "bubble_text": "Bean Bags",
+            "bubble_link": "shopify:\/\/collections\/bean-bags"
+          }
+        },
+        "image_kHLzdk": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/outdoor_lights.jpg",
+            "bubble_text": "Outdoor Lights",
+            "bubble_link": "shopify:\/\/collections\/outdoor-lights"
+          }
+        }
+      },
+      "block_order": [
+        "image_iJw6wi",
+        "image_z6cReH",
+        "image_kHLzdk"
+      ],
+      "settings": {
+        "hide_mobile": false,
+        "hide_desktop": false,
+        "mobile_content_alignment": "center",
+        "icon_size": 100,
+        "icon_size_mobile": 66,
+        "text_size": 12,
+        "text_color": "#121212",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "border_size": 2,
+        "ring_color": "#121212",
+        "background_gradient": "",
+        "square_image": false,
+        "background-color": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "ss_circle_menu_aGzreR",
+    "ss_circle_menu_fDLYWP",
+    "banner",
+    "product-grid"
+  ]
+}

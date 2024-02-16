@@ -1,0 +1,1530 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/3.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "944c04af-9889-4417-8387-8b27d7fb2062": {
+      "type": "ss-circle-menu",
+      "blocks": {
+        "template--16906951196927__944c04af-9889-4417-8387-8b27d7fb2062-Image-1": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/wooden-watch.jpg",
+            "bubble_text": "Watches",
+            "bubble_link": "shopify:\/\/collections\/all-watches"
+          }
+        },
+        "template--16906951196927__944c04af-9889-4417-8387-8b27d7fb2062-Image-2": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/bean_bags_9d46b7c5-4357-4746-901a-544836171254.webp",
+            "bubble_text": "Bean Bags",
+            "bubble_link": "shopify:\/\/collections\/bean-bags"
+          }
+        },
+        "template--16906951196927__944c04af-9889-4417-8387-8b27d7fb2062-Image-3": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/61rI4pfxh9L._AC_UY350.jpg",
+            "bubble_text": "Abaya",
+            "bubble_link": "shopify:\/\/collections\/abaya"
+          }
+        },
+        "template--16906951196927__944c04af-9889-4417-8387-8b27d7fb2062-Image-4": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/61hnIoEIQqL._SL1000.jpg",
+            "bubble_text": "Camping & Hiking",
+            "bubble_link": "shopify:\/\/collections\/camping-hikiing"
+          }
+        },
+        "template--16906951196927__944c04af-9889-4417-8387-8b27d7fb2062-Image-5": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/81Y708N2K7L._AC_UF1000_1000_QL80.jpg",
+            "bubble_text": "Combat Sports",
+            "bubble_link": "shopify:\/\/collections\/combat-sports"
+          }
+        }
+      },
+      "block_order": [
+        "template--16906951196927__944c04af-9889-4417-8387-8b27d7fb2062-Image-1",
+        "template--16906951196927__944c04af-9889-4417-8387-8b27d7fb2062-Image-2",
+        "template--16906951196927__944c04af-9889-4417-8387-8b27d7fb2062-Image-3",
+        "template--16906951196927__944c04af-9889-4417-8387-8b27d7fb2062-Image-4",
+        "template--16906951196927__944c04af-9889-4417-8387-8b27d7fb2062-Image-5"
+      ],
+      "settings": {
+        "hide_mobile": false,
+        "hide_desktop": false,
+        "mobile_content_alignment": "center",
+        "icon_size": 100,
+        "icon_size_mobile": 38,
+        "text_size": 12,
+        "text_color": "#121212",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "border_size": 2,
+        "ring_color": "#121212",
+        "background_gradient": "",
+        "square_image": false,
+        "background-color": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "4ae9ff73-de98-4986-9fc8-c023f515042d": {
+      "type": "ss-circle-menu",
+      "blocks": {
+        "template--16906951196927__4ae9ff73-de98-4986-9fc8-c023f515042d-Image-2": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/71YMzEveFGL.__AC_SX300_SY300_QL70_ML2_-removebg-preview.png",
+            "bubble_text": "Car Cleaning",
+            "bubble_link": "shopify:\/\/collections\/car-cleaning"
+          }
+        },
+        "template--16906951196927__4ae9ff73-de98-4986-9fc8-c023f515042d-Image-3": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/61O288S1PvL._SL1500.jpg",
+            "bubble_text": "Printers & Inks",
+            "bubble_link": "shopify:\/\/collections\/printers-and-inks"
+          }
+        },
+        "template--16906951196927__4ae9ff73-de98-4986-9fc8-c023f515042d-Image-4": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/71POG_MKq-L._AC_SL1500_-removebg-preview.png",
+            "bubble_text": "Monitors",
+            "bubble_link": "shopify:\/\/collections\/monitors"
+          }
+        },
+        "template--16906951196927__4ae9ff73-de98-4986-9fc8-c023f515042d-Image-5": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/71c_YOxfTGL._AC_SX522.jpg",
+            "bubble_text": "Headphones",
+            "bubble_link": "shopify:\/\/collections\/headphones-earphones"
+          }
+        },
+        "image_JqwznX": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/Screenshot_2024-01-22_at_2.10.26_PM.png",
+            "bubble_text": "Hoodies",
+            "bubble_link": "shopify:\/\/collections\/hoodies-1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16906951196927__4ae9ff73-de98-4986-9fc8-c023f515042d-Image-2",
+        "template--16906951196927__4ae9ff73-de98-4986-9fc8-c023f515042d-Image-3",
+        "template--16906951196927__4ae9ff73-de98-4986-9fc8-c023f515042d-Image-4",
+        "template--16906951196927__4ae9ff73-de98-4986-9fc8-c023f515042d-Image-5",
+        "image_JqwznX"
+      ],
+      "settings": {
+        "hide_mobile": false,
+        "hide_desktop": false,
+        "mobile_content_alignment": "center",
+        "icon_size": 100,
+        "icon_size_mobile": 66,
+        "text_size": 12,
+        "text_color": "#121212",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "border_size": 2,
+        "ring_color": "#121212",
+        "background_gradient": "",
+        "square_image": false,
+        "background-color": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ee9cad01-7da5-4585-aafc-98a7448d02fd": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16906951196927__ee9cad01-7da5-4585-aafc-98a7448d02fd-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Find your Solution<\/strong>",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "template--16906951196927__ee9cad01-7da5-4585-aafc-98a7448d02fd-heading-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "6c85d179-6ca2-4bf7-a99c-1f48772a9cc5": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16906951196927__6c85d179-6ca2-4bf7-a99c-1f48772a9cc5-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cavewomen-jewellery"
+          }
+        },
+        "8b9cc196-ece0-4f3f-807b-8ae33b28c9fc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "phones-tabs"
+          }
+        },
+        "1e3da9e6-aec4-46a4-8fb1-8d925745a947": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cavewomen-handbags"
+          }
+        },
+        "template--16906951196927__6c85d179-6ca2-4bf7-a99c-1f48772a9cc5-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "perfume"
+          }
+        },
+        "06688316-681f-4ba4-8f76-3ec28eb8bcb1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "heels-sandals"
+          }
+        },
+        "c9703c4f-7653-4e05-84d5-d730154a0728": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cavewomen-watches"
+          }
+        },
+        "6af4b77a-e989-4964-a871-8fc6bfbefe10": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cavewomen-tops"
+          }
+        },
+        "featured_collection_X6dJ48": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "teddy-bears"
+          }
+        }
+      },
+      "block_order": [
+        "template--16906951196927__6c85d179-6ca2-4bf7-a99c-1f48772a9cc5-featured_collection-2",
+        "8b9cc196-ece0-4f3f-807b-8ae33b28c9fc",
+        "1e3da9e6-aec4-46a4-8fb1-8d925745a947",
+        "template--16906951196927__6c85d179-6ca2-4bf7-a99c-1f48772a9cc5-featured_collection-3",
+        "06688316-681f-4ba4-8f76-3ec28eb8bcb1",
+        "c9703c4f-7653-4e05-84d5-d730154a0728",
+        "6af4b77a-e989-4964-a871-8fc6bfbefe10",
+        "featured_collection_X6dJ48"
+      ],
+      "settings": {
+        "title": "<strong>VALENTINE SALE   40% OFF<\/strong>",
+        "heading_size": "h2",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_3FfEbX": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "<strong> SELLING OUT FAST<\/strong>",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "couple-gifts",
+        "products_to_show": 10,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "9ffb0d1b-e275-48dc-a54b-ff68e916e0b7": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16906951196927__9ffb0d1b-e275-48dc-a54b-ff68e916e0b7-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "black-friday-sale-makeup-20-off"
+          }
+        },
+        "template--16906951196927__9ffb0d1b-e275-48dc-a54b-ff68e916e0b7-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "skincare"
+          }
+        },
+        "template--16906951196927__9ffb0d1b-e275-48dc-a54b-ff68e916e0b7-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bodycare"
+          }
+        },
+        "849f17bf-404b-4e48-bf8e-94ebc853815c": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "black-friday-sale-electronic-beauty-tools-20-off"
+          }
+        },
+        "b396e972-da98-4a79-afd9-6fe9ff2259f9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "black-friday-sale-fragrance-20-off"
+          }
+        },
+        "5bf8489b-69dc-43e8-bb1c-0a482d8db164": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "black-friday-sale-hairstyling-20-off"
+          }
+        },
+        "1843b992-c067-4996-98ee-d546399cceb0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "black-friday-sale-haircare-20-off"
+          }
+        }
+      },
+      "block_order": [
+        "template--16906951196927__9ffb0d1b-e275-48dc-a54b-ff68e916e0b7-featured_collection-3",
+        "template--16906951196927__9ffb0d1b-e275-48dc-a54b-ff68e916e0b7-featured_collection-2",
+        "template--16906951196927__9ffb0d1b-e275-48dc-a54b-ff68e916e0b7-featured_collection-1",
+        "849f17bf-404b-4e48-bf8e-94ebc853815c",
+        "b396e972-da98-4a79-afd9-6fe9ff2259f9",
+        "5bf8489b-69dc-43e8-bb1c-0a482d8db164",
+        "1843b992-c067-4996-98ee-d546399cceb0"
+      ],
+      "settings": {
+        "title": "<strong>Self-Care<\/strong>",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cc375cbc-ce67-4d18-bfcf-64d52c40299e": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16906951196927__cc375cbc-ce67-4d18-bfcf-64d52c40299e-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ps5-games"
+          }
+        },
+        "featured_collection_beV88x": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "playstation"
+          }
+        },
+        "2b034c3d-9d41-427d-ab57-35e0bfec3260": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "xbox"
+          }
+        },
+        "template--16906951196927__cc375cbc-ce67-4d18-bfcf-64d52c40299e-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "xbox-games"
+          }
+        },
+        "c53442b6-0464-46c4-8590-4abfc5db7d9d": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "gaming-furniture"
+          }
+        },
+        "template--16906951196927__cc375cbc-ce67-4d18-bfcf-64d52c40299e-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "gaming-laptops"
+          }
+        },
+        "805c9222-758a-45b4-9ce8-30f7cfcf62da": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nintendo-switch"
+          }
+        }
+      },
+      "block_order": [
+        "template--16906951196927__cc375cbc-ce67-4d18-bfcf-64d52c40299e-featured_collection-1",
+        "featured_collection_beV88x",
+        "2b034c3d-9d41-427d-ab57-35e0bfec3260",
+        "template--16906951196927__cc375cbc-ce67-4d18-bfcf-64d52c40299e-featured_collection-3",
+        "c53442b6-0464-46c4-8590-4abfc5db7d9d",
+        "template--16906951196927__cc375cbc-ce67-4d18-bfcf-64d52c40299e-featured_collection-2",
+        "805c9222-758a-45b4-9ce8-30f7cfcf62da"
+      ],
+      "settings": {
+        "title": "<strong>Gaming<\/strong>",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "1e3f778f-b493-4764-bc66-b5aacc2de2af": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2 {color: #050504;}",
+        "div {color: #050504;}"
+      ],
+      "settings": {
+        "title": "<strong>Price Drops on iPhone 30% OFF<\/strong>",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "iphone",
+        "products_to_show": 6,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ab8c65ab-eb6f-42eb-a17a-006451a51882": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16906951196927__ab8c65ab-eb6f-42eb-a17a-006451a51882-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "living-room"
+          }
+        },
+        "template--16906951196927__ab8c65ab-eb6f-42eb-a17a-006451a51882-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dining-room"
+          }
+        },
+        "template--16906951196927__ab8c65ab-eb6f-42eb-a17a-006451a51882-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bedroom"
+          }
+        },
+        "fb322942-88a7-40da-93c0-bf8a24d075de": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cavehomes-office"
+          }
+        },
+        "6ea10bf4-84ac-4ec0-b39e-a8b924738a22": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "outdoor-furniture"
+          }
+        },
+        "308ab803-636b-4c2d-8347-5a233039e9b1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kids-furniture"
+          }
+        },
+        "bc0636fc-eb31-439c-a3fb-236043824498": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "accent-furniture"
+          }
+        },
+        "900a193c-9623-4d56-9cbb-bd885b6dfedb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "storage-organization-1"
+          }
+        },
+        "4e8079ba-3319-4a07-a017-e08e2ea330bf": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "entryway-furniture"
+          }
+        },
+        "featured_collection_QeRFcY": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "furniture-accessories"
+          }
+        }
+      },
+      "block_order": [
+        "template--16906951196927__ab8c65ab-eb6f-42eb-a17a-006451a51882-featured_collection-1",
+        "template--16906951196927__ab8c65ab-eb6f-42eb-a17a-006451a51882-featured_collection-2",
+        "template--16906951196927__ab8c65ab-eb6f-42eb-a17a-006451a51882-featured_collection-3",
+        "fb322942-88a7-40da-93c0-bf8a24d075de",
+        "6ea10bf4-84ac-4ec0-b39e-a8b924738a22",
+        "308ab803-636b-4c2d-8347-5a233039e9b1",
+        "bc0636fc-eb31-439c-a3fb-236043824498",
+        "900a193c-9623-4d56-9cbb-bd885b6dfedb",
+        "4e8079ba-3319-4a07-a017-e08e2ea330bf",
+        "featured_collection_QeRFcY"
+      ],
+      "settings": {
+        "title": "<strong>Furniture  <\/strong>",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "50a7d11a-f586-4a93-962c-1cdf12d415c5": {
+      "type": "featured-collection",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "title": "Samsung Deals",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "phones",
+        "products_to_show": 6,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "a55941f9-21fa-4cb4-9270-27863a69a597": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_Gtq3xz": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "g-shock"
+          }
+        },
+        "template--16906951196927__a55941f9-21fa-4cb4-9270-27863a69a597-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "casio"
+          }
+        },
+        "template--16906951196927__a55941f9-21fa-4cb4-9270-27863a69a597-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "black-friday-sale-30-off-hugo-boss"
+          }
+        },
+        "featured_collection_kmLPdV": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "seiko-watches"
+          }
+        },
+        "template--16906951196927__a55941f9-21fa-4cb4-9270-27863a69a597-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tommy-hilfiger-watches"
+          }
+        },
+        "84b26a66-54e7-4322-af1d-1c2c140369bb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "guess-watches"
+          }
+        },
+        "b85d4c88-6b5b-4dbb-aeba-aa8cf4fced6f": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fossil-watches"
+          }
+        },
+        "3a814b10-5437-4f92-8e38-c570d489605a": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "police-watch"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_Gtq3xz",
+        "template--16906951196927__a55941f9-21fa-4cb4-9270-27863a69a597-featured_collection-1",
+        "template--16906951196927__a55941f9-21fa-4cb4-9270-27863a69a597-featured_collection-2",
+        "featured_collection_kmLPdV",
+        "template--16906951196927__a55941f9-21fa-4cb4-9270-27863a69a597-featured_collection-3",
+        "84b26a66-54e7-4322-af1d-1c2c140369bb",
+        "b85d4c88-6b5b-4dbb-aeba-aa8cf4fced6f",
+        "3a814b10-5437-4f92-8e38-c570d489605a"
+      ],
+      "settings": {
+        "title": "<strong>Watches <\/strong>",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "09580714-9889-44a8-9dfd-71d4a1275c17": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "<strong>Apple Accessories <\/strong>",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "apple-accessories",
+        "products_to_show": 6,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "65f53ff6-5ac9-4953-8a5e-44bbbb7a823c": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "<strong>Beauty Deals under 50 AED<\/strong>",
+        "heading_size": "h2",
+        "description": "<p>BLACK FRIDAY SALE 30 % OFF<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "",
+        "products_to_show": 16,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "af07221c-cc5f-4eef-8ac8-03585de49715": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16906951196927__af07221c-cc5f-4eef-8ac8-03585de49715-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cavewomen-hoodies"
+          }
+        },
+        "template--16906951196927__af07221c-cc5f-4eef-8ac8-03585de49715-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "jackets"
+          }
+        },
+        "5b6de957-3e20-4e5f-8ef9-c598784cc9b5": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "abaya"
+          }
+        },
+        "template--16906951196927__af07221c-cc5f-4eef-8ac8-03585de49715-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tops"
+          }
+        },
+        "a7b113d7-8836-46cf-9ab9-5ab93cbcd1fd": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "shoes"
+          }
+        },
+        "ce2211b7-2997-4b29-a6a6-921da5e2449e": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "footwear"
+          }
+        },
+        "5da6323f-47eb-4d39-a5f1-0b2a943d752b": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pants-1"
+          }
+        },
+        "featured_collection_D6wWDb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "handbags"
+          }
+        }
+      },
+      "block_order": [
+        "template--16906951196927__af07221c-cc5f-4eef-8ac8-03585de49715-featured_collection-1",
+        "template--16906951196927__af07221c-cc5f-4eef-8ac8-03585de49715-featured_collection-2",
+        "5b6de957-3e20-4e5f-8ef9-c598784cc9b5",
+        "template--16906951196927__af07221c-cc5f-4eef-8ac8-03585de49715-featured_collection-3",
+        "a7b113d7-8836-46cf-9ab9-5ab93cbcd1fd",
+        "ce2211b7-2997-4b29-a6a6-921da5e2449e",
+        "5da6323f-47eb-4d39-a5f1-0b2a943d752b",
+        "featured_collection_D6wWDb"
+      ],
+      "settings": {
+        "title": "<strong>CaveWomen Fashion <\/strong>",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "8755f1d3-3286-4f50-b848-3719b9795f7d": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16906951196927__8755f1d3-3286-4f50-b848-3719b9795f7d-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hoodies"
+          }
+        },
+        "template--16906951196927__8755f1d3-3286-4f50-b848-3719b9795f7d-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "jackets-1"
+          }
+        },
+        "template--16906951196927__8755f1d3-3286-4f50-b848-3719b9795f7d-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "jubba"
+          }
+        },
+        "c09b3767-7e8f-49c0-a883-ade9b17add30": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "t-shirts-polos"
+          }
+        },
+        "83f9c92e-b2e3-48c6-8400-b94d5585ffbd": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cavemen-jewellery"
+          }
+        },
+        "4b24b82e-8a72-4c8b-93f8-58dfe63d9297": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sportswear"
+          }
+        },
+        "b10257a0-1b03-4064-8e2c-390d7f2a7ea6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cavemen-footwear"
+          }
+        },
+        "featured_collection_hppfPn": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pants"
+          }
+        },
+        "featured_collection_VdF3GC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cavemen-accessories"
+          }
+        }
+      },
+      "block_order": [
+        "template--16906951196927__8755f1d3-3286-4f50-b848-3719b9795f7d-featured_collection-1",
+        "template--16906951196927__8755f1d3-3286-4f50-b848-3719b9795f7d-featured_collection-2",
+        "template--16906951196927__8755f1d3-3286-4f50-b848-3719b9795f7d-featured_collection-3",
+        "c09b3767-7e8f-49c0-a883-ade9b17add30",
+        "83f9c92e-b2e3-48c6-8400-b94d5585ffbd",
+        "4b24b82e-8a72-4c8b-93f8-58dfe63d9297",
+        "b10257a0-1b03-4064-8e2c-390d7f2a7ea6",
+        "featured_collection_hppfPn",
+        "featured_collection_VdF3GC"
+      ],
+      "settings": {
+        "title": "<strong>CaveMen Fashion <\/strong>",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "7e2eb657-a90d-4faf-bd9e-fd3147f98371": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16906951196927__7e2eb657-a90d-4faf-bd9e-fd3147f98371-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "reffrigerators"
+          }
+        },
+        "template--16906951196927__7e2eb657-a90d-4faf-bd9e-fd3147f98371-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "microwaves"
+          }
+        },
+        "template--16906951196927__7e2eb657-a90d-4faf-bd9e-fd3147f98371-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cooking-ranges"
+          }
+        },
+        "c9f6b64f-0086-476c-b2a5-b879bdf23211": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dishwashers"
+          }
+        },
+        "0a6ea5e9-cba5-4919-bd24-d2e930f14faa": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "juicers"
+          }
+        },
+        "b438151b-e8e2-4fa9-b324-9dfec3c1ad27": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "toasters"
+          }
+        },
+        "77c2f464-fb29-4c20-abef-78ade2f6c924": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "fryers"
+          }
+        },
+        "featured_collection_CMXemW": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kettles"
+          }
+        },
+        "featured_collection_mJPgLj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "blenders"
+          }
+        }
+      },
+      "block_order": [
+        "template--16906951196927__7e2eb657-a90d-4faf-bd9e-fd3147f98371-featured_collection-1",
+        "template--16906951196927__7e2eb657-a90d-4faf-bd9e-fd3147f98371-featured_collection-2",
+        "template--16906951196927__7e2eb657-a90d-4faf-bd9e-fd3147f98371-featured_collection-3",
+        "c9f6b64f-0086-476c-b2a5-b879bdf23211",
+        "0a6ea5e9-cba5-4919-bd24-d2e930f14faa",
+        "b438151b-e8e2-4fa9-b324-9dfec3c1ad27",
+        "77c2f464-fb29-4c20-abef-78ade2f6c924",
+        "featured_collection_CMXemW",
+        "featured_collection_mJPgLj"
+      ],
+      "settings": {
+        "title": "<strong>Cavehomes & Kitchen Favourites<\/strong>",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "61aa7e4d-fc16-45ea-b500-450cd339dd9c": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16906951196927__61aa7e4d-fc16-45ea-b500-450cd339dd9c-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "air-conditioners"
+          }
+        },
+        "template--16906951196927__61aa7e4d-fc16-45ea-b500-450cd339dd9c-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "powerhand-tools"
+          }
+        },
+        "template--16906951196927__61aa7e4d-fc16-45ea-b500-450cd339dd9c-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "water-coolers"
+          }
+        },
+        "3408171a-1847-429a-bbac-78f273974122": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "irons"
+          }
+        },
+        "0ed4a6d7-8232-4bc7-82e5-5975919dc6e7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "vaccum-cleaners"
+          }
+        },
+        "6b840b4b-d4e1-425e-88e4-5b4ab4572cec": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "washing-machines"
+          }
+        },
+        "14b9e9f1-dde6-4e0f-b852-594f6366ab28": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "air-freshners"
+          }
+        },
+        "featured_collection_p9BnrM": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cookware"
+          }
+        },
+        "featured_collection_q3dqjD": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dining-set"
+          }
+        }
+      },
+      "block_order": [
+        "template--16906951196927__61aa7e4d-fc16-45ea-b500-450cd339dd9c-featured_collection-1",
+        "template--16906951196927__61aa7e4d-fc16-45ea-b500-450cd339dd9c-featured_collection-2",
+        "template--16906951196927__61aa7e4d-fc16-45ea-b500-450cd339dd9c-featured_collection-3",
+        "3408171a-1847-429a-bbac-78f273974122",
+        "0ed4a6d7-8232-4bc7-82e5-5975919dc6e7",
+        "6b840b4b-d4e1-425e-88e4-5b4ab4572cec",
+        "14b9e9f1-dde6-4e0f-b852-594f6366ab28",
+        "featured_collection_p9BnrM",
+        "featured_collection_q3dqjD"
+      ],
+      "settings": {
+        "title": "<strong>Cavehome Appliances <\/strong>",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "adfe369c-971f-4a87-8e6e-b16b064abbc3": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_yPCNMx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "televisions"
+          }
+        },
+        "featured_collection_PbHFTx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "camera"
+          }
+        },
+        "featured_collection_jwLhG9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "headphones-earphones"
+          }
+        },
+        "featured_collection_tcE3He": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "home-entertainment-systems"
+          }
+        },
+        "featured_collection_eRrBdb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tablets-accessories"
+          }
+        },
+        "featured_collection_ac8Udh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "projectors"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_yPCNMx",
+        "featured_collection_PbHFTx",
+        "featured_collection_jwLhG9",
+        "featured_collection_tcE3He",
+        "featured_collection_eRrBdb",
+        "featured_collection_ac8Udh"
+      ],
+      "settings": {
+        "title": "<strong>Electronics<\/strong>",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "286c4717-c421-478c-86d6-26207308ab6d": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16906951196927__286c4717-c421-478c-86d6-26207308ab6d-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "laptops-computers"
+          }
+        },
+        "template--16906951196927__286c4717-c421-478c-86d6-26207308ab6d-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pc-components"
+          }
+        },
+        "2bc13958-888b-4916-9246-9a26d36fc100": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "monitors"
+          }
+        },
+        "template--16906951196927__286c4717-c421-478c-86d6-26207308ab6d-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "computer-data-storage"
+          }
+        },
+        "5a029e78-9ea4-4283-9e8c-6a8af62e9715": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "keyboards-mouses"
+          }
+        },
+        "featured_collection_LqcbyU": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "routers"
+          }
+        },
+        "ba74eb6e-6587-4cb9-a84c-f4ae06dc3502": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "software"
+          }
+        },
+        "51b2b845-505f-4120-b79b-2d75f988753f": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pc-gaming"
+          }
+        }
+      },
+      "block_order": [
+        "template--16906951196927__286c4717-c421-478c-86d6-26207308ab6d-featured_collection-1",
+        "template--16906951196927__286c4717-c421-478c-86d6-26207308ab6d-featured_collection-2",
+        "2bc13958-888b-4916-9246-9a26d36fc100",
+        "template--16906951196927__286c4717-c421-478c-86d6-26207308ab6d-featured_collection-3",
+        "5a029e78-9ea4-4283-9e8c-6a8af62e9715",
+        "featured_collection_LqcbyU",
+        "ba74eb6e-6587-4cb9-a84c-f4ae06dc3502",
+        "51b2b845-505f-4120-b79b-2d75f988753f"
+      ],
+      "settings": {
+        "title": "<strong>Laptops & Accessories <\/strong>",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3d7db923-f0aa-494c-810d-e9c950f927fa": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16906951196927__3d7db923-f0aa-494c-810d-e9c950f927fa-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ray-ban"
+          }
+        },
+        "template--16906951196927__3d7db923-f0aa-494c-810d-e9c950f927fa-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "carrera"
+          }
+        },
+        "template--16906951196927__3d7db923-f0aa-494c-810d-e9c950f927fa-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "lacoste"
+          }
+        },
+        "2f0dea81-6443-4947-a591-33f2b0b39225": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "guess"
+          }
+        },
+        "976f7f70-3bc8-420a-9040-74c3799d3908": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frames"
+          }
+        },
+        "c8843fcd-7c7a-418c-be48-213f92ddecb3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "contact-lenses"
+          }
+        }
+      },
+      "block_order": [
+        "template--16906951196927__3d7db923-f0aa-494c-810d-e9c950f927fa-featured_collection-1",
+        "template--16906951196927__3d7db923-f0aa-494c-810d-e9c950f927fa-featured_collection-3",
+        "template--16906951196927__3d7db923-f0aa-494c-810d-e9c950f927fa-featured_collection-2",
+        "2f0dea81-6443-4947-a591-33f2b0b39225",
+        "976f7f70-3bc8-420a-9040-74c3799d3908",
+        "c8843fcd-7c7a-418c-be48-213f92ddecb3"
+      ],
+      "settings": {
+        "title": "<strong>Eyewear <\/strong>",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "81c86062-9a1c-415c-858b-a5b2c44fe328": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16906951196927__81c86062-9a1c-415c-858b-a5b2c44fe328-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "arts-crafts"
+          }
+        },
+        "template--16906951196927__81c86062-9a1c-415c-858b-a5b2c44fe328-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "planners-organizers"
+          }
+        },
+        "template--16906951196927__81c86062-9a1c-415c-858b-a5b2c44fe328-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "office-and-electronics"
+          }
+        },
+        "58e3305a-a923-463a-a8e1-8cc71da27ba7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "paper-products"
+          }
+        },
+        "38bad836-0e3d-4644-82f1-1b04e665bef4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "school-supplies"
+          }
+        },
+        "5f768e34-56da-45c3-8482-9ca89ac393ef": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "writing-supplies"
+          }
+        },
+        "718f753a-06eb-4bb2-94fc-bcf6b23c93d0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "educational-supplies"
+          }
+        },
+        "featured_collection_dxbRC3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "envelopes"
+          }
+        }
+      },
+      "block_order": [
+        "template--16906951196927__81c86062-9a1c-415c-858b-a5b2c44fe328-featured_collection-1",
+        "template--16906951196927__81c86062-9a1c-415c-858b-a5b2c44fe328-featured_collection-2",
+        "template--16906951196927__81c86062-9a1c-415c-858b-a5b2c44fe328-featured_collection-3",
+        "58e3305a-a923-463a-a8e1-8cc71da27ba7",
+        "38bad836-0e3d-4644-82f1-1b04e665bef4",
+        "5f768e34-56da-45c3-8482-9ca89ac393ef",
+        "718f753a-06eb-4bb2-94fc-bcf6b23c93d0",
+        "featured_collection_dxbRC3"
+      ],
+      "settings": {
+        "title": "<strong>Office & School Essentials <\/strong>",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cddcb283-3c66-4561-9465-d942ffb84eb3": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16906951196927__cddcb283-3c66-4561-9465-d942ffb84eb3-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sport-nutrition"
+          }
+        },
+        "template--16906951196927__cddcb283-3c66-4561-9465-d942ffb84eb3-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dietary-supplements"
+          }
+        },
+        "template--16906951196927__cddcb283-3c66-4561-9465-d942ffb84eb3-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "multi-vitamins"
+          }
+        },
+        "767ceea2-4223-45b4-af82-94ac5199fbc4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "haircare-supplements"
+          }
+        },
+        "246f89e1-7aca-49e4-9da6-2fb5178c09fd": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "weighing-scale"
+          }
+        },
+        "c631b3a1-0074-4c02-b245-7e974f3ffb91": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "massage-relaxation"
+          }
+        },
+        "f5c251aa-1fdc-4c4c-9770-74f13fa38f4b": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "family-planning"
+          }
+        },
+        "featured_collection_dQL6dr": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "health-monitors"
+          }
+        },
+        "featured_collection_xRaw7k": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mobility-aid-equipment"
+          }
+        },
+        "featured_collection_QVNeCi": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "braces-splints"
+          }
+        }
+      },
+      "block_order": [
+        "template--16906951196927__cddcb283-3c66-4561-9465-d942ffb84eb3-featured_collection-1",
+        "template--16906951196927__cddcb283-3c66-4561-9465-d942ffb84eb3-featured_collection-2",
+        "template--16906951196927__cddcb283-3c66-4561-9465-d942ffb84eb3-featured_collection-3",
+        "767ceea2-4223-45b4-af82-94ac5199fbc4",
+        "246f89e1-7aca-49e4-9da6-2fb5178c09fd",
+        "c631b3a1-0074-4c02-b245-7e974f3ffb91",
+        "f5c251aa-1fdc-4c4c-9770-74f13fa38f4b",
+        "featured_collection_dQL6dr",
+        "featured_collection_xRaw7k",
+        "featured_collection_QVNeCi"
+      ],
+      "settings": {
+        "title": "<strong>Health & Nutrition <\/strong>",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "5d67f335-5de7-4eef-9274-219c8976a529": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16906951196927__5d67f335-5de7-4eef-9274-219c8976a529-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "camping-hikiing"
+          }
+        },
+        "template--16906951196927__5d67f335-5de7-4eef-9274-219c8976a529-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "water-sports"
+          }
+        },
+        "template--16906951196927__5d67f335-5de7-4eef-9274-219c8976a529-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "yoga"
+          }
+        },
+        "a33ee144-14b7-4f0f-97fa-639c523116e1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "golf"
+          }
+        },
+        "81bb7215-2b40-4222-9028-7991515cd304": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "combat-sports"
+          }
+        },
+        "bd5b3fcc-a18c-4197-aa23-8caac8d38d70": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "football"
+          }
+        },
+        "01d73e1d-abee-4956-a895-356d8114207c": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tennis"
+          }
+        },
+        "featured_collection_FBkUai": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "team-sports"
+          }
+        }
+      },
+      "block_order": [
+        "template--16906951196927__5d67f335-5de7-4eef-9274-219c8976a529-featured_collection-1",
+        "template--16906951196927__5d67f335-5de7-4eef-9274-219c8976a529-featured_collection-2",
+        "template--16906951196927__5d67f335-5de7-4eef-9274-219c8976a529-featured_collection-3",
+        "a33ee144-14b7-4f0f-97fa-639c523116e1",
+        "81bb7215-2b40-4222-9028-7991515cd304",
+        "bd5b3fcc-a18c-4197-aa23-8caac8d38d70",
+        "01d73e1d-abee-4956-a895-356d8114207c",
+        "featured_collection_FBkUai"
+      ],
+      "settings": {
+        "title": "<strong>Sports Essentials<\/strong>",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_nc7J6e": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_aDLr6J": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "car-cleaning"
+          }
+        },
+        "featured_collection_AP9cpi": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "air-freshner"
+          }
+        },
+        "featured_collection_GdwMXE": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tyre-inflators"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_aDLr6J",
+        "featured_collection_AP9cpi",
+        "featured_collection_GdwMXE"
+      ],
+      "settings": {
+        "title": "Car Essentials",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "color_scheme": "",
+        "show_view_all": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "944c04af-9889-4417-8387-8b27d7fb2062",
+    "4ae9ff73-de98-4986-9fc8-c023f515042d",
+    "ee9cad01-7da5-4585-aafc-98a7448d02fd",
+    "6c85d179-6ca2-4bf7-a99c-1f48772a9cc5",
+    "featured_collection_3FfEbX",
+    "9ffb0d1b-e275-48dc-a54b-ff68e916e0b7",
+    "cc375cbc-ce67-4d18-bfcf-64d52c40299e",
+    "1e3f778f-b493-4764-bc66-b5aacc2de2af",
+    "ab8c65ab-eb6f-42eb-a17a-006451a51882",
+    "50a7d11a-f586-4a93-962c-1cdf12d415c5",
+    "a55941f9-21fa-4cb4-9270-27863a69a597",
+    "09580714-9889-44a8-9dfd-71d4a1275c17",
+    "65f53ff6-5ac9-4953-8a5e-44bbbb7a823c",
+    "af07221c-cc5f-4eef-8ac8-03585de49715",
+    "8755f1d3-3286-4f50-b848-3719b9795f7d",
+    "7e2eb657-a90d-4faf-bd9e-fd3147f98371",
+    "61aa7e4d-fc16-45ea-b500-450cd339dd9c",
+    "adfe369c-971f-4a87-8e6e-b16b064abbc3",
+    "286c4717-c421-478c-86d6-26207308ab6d",
+    "3d7db923-f0aa-494c-810d-e9c950f927fa",
+    "81c86062-9a1c-415c-858b-a5b2c44fe328",
+    "cddcb283-3c66-4561-9465-d942ffb84eb3",
+    "5d67f335-5de7-4eef-9274-219c8976a529",
+    "collection_list_nc7J6e"
+  ]
+}
