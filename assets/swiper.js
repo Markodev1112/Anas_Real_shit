@@ -7,7 +7,7 @@ var swiper = new Swiper(".swiper-container", {
   freeMode: true,
   freeModeSticky: true,
   slideToClickedSlide: true,
-  speed: 500,
+  speed: 1500,
   freeModeMomentumRatio: 0.3,
   freeModeMomentumVelocityRatio: 1,
 });

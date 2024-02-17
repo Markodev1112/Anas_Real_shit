@@ -45,8 +45,9 @@
 .header-swipelect {
     position: relative;
     width: 100%;
-    max-width: 500px;
+    max-width: max-content;
     overflow: hidden;
+    padding: 0;
 }
 .header-swipelect .swipelect__slide {
     width: max-content;

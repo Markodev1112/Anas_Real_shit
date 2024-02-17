@@ -139,7 +139,7 @@
   
 
   .custom-mobile .card__inner {
-    background-color: #f5f5f5;
+    background-color: #c251cf;
   }
 
   .custom-mobile .card_text.card__content {
@@ -154,7 +154,7 @@
   }
 
   .custom-mobile .media--transparent {
-    background: #ddd;
+    background: #e2c0e6;
     width: calc(100% - 10px) !important;     
     margin: auto;
     width: calc(100% - 10px);
