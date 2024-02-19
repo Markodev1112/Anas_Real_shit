@@ -6,7 +6,7 @@
 {% assign search_box_width = 350 %}
 
 {% comment %} <div class="b EzfyHeaderSearch EzfyHeaderSearch--{{ device }}"> {% endcomment %}
-<div class="b EzfyHeaderSearch EzfyHeaderSearch--desktop">
+<div class="b EzfyHeaderSearch EzfyHeaderSearch--desktop scroll-display">
 
   {%- if settings.predictive_search_enabled -%}
     <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
