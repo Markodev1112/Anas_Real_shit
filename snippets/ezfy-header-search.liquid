@@ -5,7 +5,9 @@
 {% assign predictive_search_height = 500 %}
 {% assign search_box_width = 350 %}
 
-<div class="b EzfyHeaderSearch EzfyHeaderSearch--{{ device }}">
+{% comment %} <div class="b EzfyHeaderSearch EzfyHeaderSearch--{{ device }}"> {% endcomment %}
+<div class="b EzfyHeaderSearch EzfyHeaderSearch--desktop scroll-display">
+
   {%- if settings.predictive_search_enabled -%}
     <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
   {%- else -%}
@@ -121,11 +123,11 @@
   flex-direction: column !important;
   }
   
-  .search-modal__form,
+  {% comment %} .search-modal__form,
   .search-modal__form > *{
   width: {{ search_box_width }}px !important;
   max-width: 100% !important;
-  }
+  } {% endcomment %}
   
   .predictive-search{
   max-height: {{ predictive_search_height }}px !important;
