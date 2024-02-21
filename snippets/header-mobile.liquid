@@ -1,31 +1,20 @@
-<header-mobile class="mobile-header">
+<header-mobile class="custom-mobile-setting mobile-header">
     <nav class="menu-mobile header-swipelect swipelect--per-view-4 ">
         <ul role="list" class="swipelect__container swiper-header-container ">
             <div class="swiper-wrapper">
                 {%- for link in section.settings.menu.links -%}
                 <li class="swipelect__slide swiper-slide">
                     {%- if link.links != blank -%}
-                    <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
-                        <summary
-                        id="HeaderDrawer-{{ link.handle }}"
-                        class="mobile-link-title"
+                    <details >
+                        <summary                        
+                            class="mobile-link-title"
                         >
                             <a class="mobile-title-link" href="{{  link.url}}">
                             {{ link.title | escape }}                    
                             </a>
                         </summary>                    
                     </details>
-                    {%- else -%}
-                    <a
-                        id="HeaderDrawer-{{ link.handle }}"
-                        href="{{ link.url }}"
-                        class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"
-                        {% if link.current %}
-                        aria-current="page"
-                        {% endif %}
-                    >
-                        {{ link.title | escape }}
-                    </a>
+                    
                     {%- endif -%}
                 </li>
                 {%- endfor -%}
