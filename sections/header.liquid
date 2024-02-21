@@ -40,11 +40,11 @@
   {%- endif -%}
 
   {%- if section.settings.menu_type_desktop != "drawer" -%}
-    @media screen and (min-width: 990px) {
+    {% comment %} @media screen and (min-width: 990px) {
       header-drawer {
         display: none;
       }
-    }
+    } {% endcomment %}
   {%- endif -%}
 
   .menu-drawer-container {
@@ -103,8 +103,8 @@
     background-color: {{ section.settings.menu_color }};
     padding: 0 20px;
   }
-  .custom-header nav span {
-    color: #fff;
+  /* .custom-header nav span {
+    color: #000;
   }
   .custom-header nav .icon.icon-caret {
     color: #fff;
@@ -117,7 +117,7 @@
   }
   .custom-header .icon.icon-cart {
     color: #fff;
-  }
+  } */
   .custom-header .header-logo-serach-wrapper {
     display: flex;
     align-items: center;
@@ -143,7 +143,7 @@
   }
   .custom-header .header-logo-serach-wrapper .field::after {
     box-shadow: unset;
-  }
+  } 
 
   @media(max-width:768px) {
     .custom-header {
@@ -227,6 +227,25 @@
       display: block;
       padding: 10px 0;
     }
+   
+    .custom-header.show {
+      height: 230px;
+      transition: height .5s ease;
+    }
+    .custom-header.hidden {
+      height: 85px;
+      transition: height .5s ease;
+    }
+    .custom-header.show .custom-mobile-setting{
+      opacity: 1;
+      transition: opacity .3s ease;
+    }
+    .custom-header.hidden .custom-mobile-setting{
+      opacity: 0.3;
+      transition: opacity .3s ease;
+    }
+
+    
   }
 
   .section-header {
@@ -302,7 +321,7 @@
       if section.settings.logo_position == 'top-center' or section.settings.menu == blank
       render 'ezfy-header-search', input_id: 'Search-In-Modal', device: 'desktop'
       endif
-    -%} {% endcomment %}
+    -%}  {% endcomment %}
     
     {% comment %} custom header on mobile {% endcomment %}
     {%- liquid
@@ -310,12 +329,13 @@
         render 'header-mobile'
       endif
     -%}
+
     <div class="header-logo-serach-wrapper">
       {%- if section.settings.logo_position != 'middle-center' -%}
         {%- if request.page_type == 'index' -%}
-          <h1 class="header__heading">
+          <h1 class="custom-mobile-setting header__heading">
         {%- endif -%}
-            <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+            <a href="{{ routes.root_url }}" class="custom-mobile-setting header__heading-link link link--text focus-inset">
               {%- if settings.logo != blank -%}
                 <div class="header__heading-logo-wrapper">
                   {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
@@ -475,11 +495,14 @@
 
       </div>
     </div>
+    
     {%- liquid
       if section.settings.menu != blank
-        if section.settings.menu_type_desktop == 'dropdown'
+        if section.settings.menu_type_desktop == 'drawer'
+          render 'header-drawer'
+        elsif section.settings.menu_type_desktop == 'dropdown'
           render 'header-dropdown-menu'
-        elsif section.settings.menu_type_desktop != 'drawer'
+        elsif section.settings.menu_type_desktop == 'mega'
           render 'header-mega-menu'
         endif
       endif
@@ -490,21 +513,21 @@
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
   <script>
-  let items = document.querySelector(".header__inline-menu").querySelectorAll("details");
-  console.log(items)
-  items.forEach(item => {
-    item.addEventListener("mouseover", () => {
-      item.setAttribute("open", true);
-      item.querySelector("ul").addEventListener("mouseleave", () => {
+    let items = document.querySelector(".header__inline-menu").querySelectorAll("details");
+    console.log(items)
+    items.forEach(item => {
+      item.addEventListener("mouseover", () => {
+        item.setAttribute("open", true);
+        item.querySelector("ul").addEventListener("mouseleave", () => {
+          item.removeAttribute("open");
+        });
+      item.addEventListener("mouseleave", () => {
         item.removeAttribute("open");
       });
-    item.addEventListener("mouseleave", () => {
-      item.removeAttribute("open");
     });
-  });
-  
-  });
-</script>
+    
+    });
+  </script>
 
 {%- if settings.cart_type == "notification" -%}
   {%- render 'cart-notification', color_scheme: section.settings.color_scheme, desktop_menu_type: section.settings.menu_type_desktop -%}

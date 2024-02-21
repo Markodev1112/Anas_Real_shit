@@ -1,5 +1,5 @@
 var swiper = new Swiper(".swiper-container", {
-  slidesPerView: 2,
+  slidesPerView: 3,
   centeredSlides: false,
   spaceBetween: 0,
   grabCursor: true,
@@ -10,6 +10,14 @@ var swiper = new Swiper(".swiper-container", {
   speed: 1500,
   freeModeMomentumRatio: 0.3,
   freeModeMomentumVelocityRatio: 1,
+  // centeredSlidesBounds: true,
+  on: {
+	snapGridLengthChange:function(){
+		if( this.snapGrid.length != this.slidesGrid.length ){
+			this.snapGrid = this.slidesGrid.slice(0);
+		}
+	}
+}
 });
 
 // When changin the slidesPerView, also update HTML class modifier

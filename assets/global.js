@@ -178,12 +178,13 @@ class QuantityInput extends HTMLElement {
 
   onInputChange(event) {
     this.validateQtyRules();
+    console.log("change, here");
   }
 
   onButtonClick(event) {
     event.preventDefault();
     const previousValue = this.input.value;
-
+    console.log("click");
     event.target.name === 'plus' ? this.input.stepUp() : this.input.stepDown();
     if (previousValue !== this.input.value) this.input.dispatchEvent(this.changeEvent);
   }
@@ -773,7 +774,7 @@ class SlideshowComponent extends SliderComponent {
   onButtonClick(event) {
     super.onButtonClick(event);
     this.wasClicked = true;
-
+    console.log("click2");
     const isFirstSlide = this.currentPage === 1;
     const isLastSlide = this.currentPage === this.sliderItemsToShow.length;
 
