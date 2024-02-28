@@ -14,9 +14,7 @@
 }
 
 @media only screen and (max-width: 749px) {
-  .banner {
-    display: none;
-  }
+  
   .banner--content-align-mobile-right .banner__box {
     text-align: right;
   }
