@@ -1,5 +1,5 @@
 
-  {% include 'rapid-search-foc-wrapper-condition' %}
+{% include 'rapid-search-foc-wrapper-condition' %}
   
 {% if  focIsEnabled == true %}
   {% render 'rapid-search-collection-template' %}
@@ -12,7 +12,7 @@
 {% endif %}
   
   
-  {{ 'template-collection.css' | asset_url | stylesheet_tag }}
+{{ 'template-collection.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 
@@ -41,7 +41,8 @@
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
-  {%- paginate collection.products by section.settings.products_per_page -%}
+  {% assign show_product = collection.products_count %}
+  {%- paginate collection.products by show_product -%}
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
     {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
       <facet-filters-form class="facets facets-vertical-sort page-width small-hide no-js-hidden">
@@ -125,7 +126,7 @@
       {%- endif -%}
 
       <div
-        class="product-grid-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        class="custom-collection product-grid-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
         id="ProductGridContainer"
         {% if settings.animations_reveal_on_scroll %}
           data-cascade
@@ -146,7 +147,7 @@
             </div>
           </div>
         {%- else -%}
-          <div class="b custom-mobile collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}">
+          <div class="b custom-mobile  collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}">
             <div class="loading-overlay gradient"></div>
             <ul
               id="product-grid"
@@ -191,6 +192,7 @@
       </div>
     </div>
   {%- endpaginate -%}
+  
   {% if section.settings.image_shape == 'arch' %}
     {% render 'mask-arch' %}
   {%- endif -%}

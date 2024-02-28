@@ -99,8 +99,9 @@
     margin: 0;
     padding: 0;
   }
+  
   .custom-header nav {
-    background-color: {{ section.settings.menu_color }};
+    
     padding: 0 20px;
   }
   /* .custom-header nav span {
@@ -150,7 +151,7 @@
       background-color: unset;
     }
     .custom-header-image {
-      background-image:url("{{ section.settings.header_bg_img | img_url: 'master' }}");
+      /* background-image:url("{{ section.settings.header_bg_img | img_url: 'master' }}"); */
       background-size: cover;
     }
     .custom-header nav {
@@ -171,13 +172,15 @@
     .custom-header .header-logo-serach-wrapper {
       flex-direction: column;
     }
-    .custom-header {
+    .custom-header .header__heading-logo-wrapper{
       padding: 10px 0;
     }
     .custom-header .menu-mobile {
-      margin-top: 15px;
+      /* margin-top: 15px; */
     }
-
+    .custom-header .swiper-notification {
+      display: none;
+    }
     .custom-header .menu-mobile ul {
       padding: 0;
       display: flex;
@@ -193,14 +196,19 @@
       font-size: 14px;
       width: 30%;
       text-align: center;
-      border: 1px solid #ddd;
-      border-radius: 10px;
+      border: 1px solid #999292;
+      border-radius: 5px;
       padding: 5px;
       background-color: #fff;
+      background-color: {{ section.settings.menu_color }};
     }
     .custom-header .menu-mobile li:hover {
-      background-color: #faf613;
+      background-color: #000;
     }
+    .custom-header .menu-mobile li:hover .mobile-title-link {
+      color: #fff;
+    }
+
     .custom-header .mobile-title-link {
       text-decoration: none;
       color: {{section.settings.mobile_nav}};
@@ -208,7 +216,7 @@
     
     .custom-header .field__label {
       font-size: 16px;
-      color: #bfbdbd;
+      color: #7d7676;
       font-family: sans-serif;
       left: 40px;
       line-height: 25px;
@@ -220,16 +228,17 @@
       display: none !important;
     }
     .custom-header .header__heading-link {
-      margin-top: 10px;
+      /* margin-top: 10px; */
+      padding: 0;
     }
     .custom-header .EzfyHeaderSearch--desktop {
       width: 100%;
       display: block;
-      padding: 10px 0;
+      padding: 0;
     }
    
     .custom-header.show {
-      height: 230px;
+      height: 175px;
       transition: height .5s ease;
     }
     .custom-header.hidden {

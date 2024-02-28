@@ -204,3 +204,6 @@ slideshow-component:not(.page-width) .slider-buttons {
   opacity: 0;
   transform: scale(0.8);
 }
+.custom-slider {
+  display: none !important;
+}

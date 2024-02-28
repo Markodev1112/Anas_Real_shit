@@ -84,3 +84,8 @@
 .rich-text__blocks.right .rich-text__buttons {
   justify-content: flex-end;
 }
+@media(max-width:768px) {
+  .rich-text__heading {
+    font-size: 36px;
+  }
+}

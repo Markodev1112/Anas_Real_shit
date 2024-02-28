@@ -151,13 +151,13 @@
             <a
               href="{{ card_product.url }}"
               id="CardLink-{{ section_id }}-{{ card_product.id }}"
-              class="full-unstyled-link"
+              class="full-unstyled-link {% if show_rating and card_product.metafields.reviews.rating.value != blank %}show-review{% endif %}"
               aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
             >
               {{ card_product.title | escape }}
             </a>
           </h3>
-          <div class="card-information">
+          <div class="c card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>
@@ -175,38 +175,76 @@
                   assign rating_decimal = 1
                 endif
               %}
-              <div
-                class="rating"
-                role="img"
-                aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: card_product.metafields.reviews.rating.value, rating_max: card_product.metafields.reviews.rating.value.scale_max }}"
-              >
-                <span
-                  aria-hidden="true"
-                  class="rating-star"
-                  style="--rating: {{ card_product.metafields.reviews.rating.value.rating | floor }}; --rating-max: {{ card_product.metafields.reviews.rating.value.scale_max }}; --rating-decimal: {{ rating_decimal }};"
-                ></span>
+              <div class="custom-rating">
+                <div
+                  class="rating"
+                  role="img"
+                  aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: card_product.metafields.reviews.rating.value, rating_max: card_product.metafields.reviews.rating.value.scale_max }}"
+                >
+                  <span
+                    aria-hidden="true"
+                    class="rating-star"
+                    style="--rating: {{ card_product.metafields.reviews.rating.value.rating | floor }}; --rating-max: {{ card_product.metafields.reviews.rating.value.scale_max }}; --rating-decimal: {{ rating_decimal }};"
+                  ></span>
+                </div>
+                <p class="rating-count caption">
+                  {% assign min = 6000 %}
+                  {% assign max = 10000 %}                 
+                  {% assign diff = max | minus: min %}
+                  {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
+                  {%- assign rating_value = card_product.metafields.reviews.rating_count | plus: randomNumber -%}
+                  <span aria-hidden="true">({{ rating_value }})</span>
+                 
+
+
+                  <span class="visually-hidden">
+                    {{- card_product.metafields.reviews.rating_count }}
+                    {{ 'accessibility.total_reviews' | t -}}
+                  </span>
+                </p>
               </div>
+
+              
+              
               <p class="rating-text caption">
                 <span aria-hidden="true">
                   {{- card_product.metafields.reviews.rating.value }} /
                   {{ card_product.metafields.reviews.rating.value.scale_max -}}
                 </span>
               </p>
-              <p class="rating-count caption">
-                <span aria-hidden="true">({{ card_product.metafields.reviews.rating_count }})</span>
-                <span class="visually-hidden">
-                  {{- card_product.metafields.reviews.rating_count }}
-                  {{ 'accessibility.total_reviews' | t -}}
-                </span>
-              </p>
+              
             {%- endif -%}
 
-            {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
-            {%- if card_product.quantity_price_breaks_configured? -%}
-              <div class="card__information-volume-pricing-note">
-                <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
-              </div>
-            {%- endif -%}
+            
+            
+              {% assign min_number  = 200 %}
+              {% assign max_number  = 500 %}
+              {% assign diff_sold = max_number | minus: min_number %}
+              {% assign random_number = "now" | date: "%N" | modulo: diff_sold | plus: min_number %}
+              {% if random_number > 300 %}
+                <p class="custom-sold-out" aria-hidden="true">
+                   <svg  version="1.0" xmlns="http://www.w3.org/2000/svg"  width="25px" height="25px" viewBox="0 0 225.000000 225.000000"  preserveAspectRatio="xMidYMid meet">  <g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)" fill="#4ecd4c" stroke="none"> <path d="M138 2009 c-21 -12 -24 -49 -6 -67 8 -8 63 -12 183 -12 l172 0 77 -292 c43 -161 86 -322 96 -358 10 -36 44 -164 75 -285 61 -235 85 -291 139 -324 33 -21 44 -21 540 -21 559 0 541 -2 590 63 32 42 40 81 72 362 14 127 33 299 43 384 17 149 17 155 -1 173 -17 17 -54 18 -742 18 l-724 0 -11 33 c-5 17 -27 95 -47 172 -20 77 -44 146 -52 153 -20 15 -378 17 -404 1z m1902 -474 c0 -14 -18 -183 -40 -377 -41 -353 -51 -397 -89 -418 -13 -6 -189 -10 -499 -10 l-479 0 -26 26 c-31 31 -24 10 -87 254 -114 437 -140 537 -140 543 0 4 306 7 680 7 l680 0 0 -25z"/> <path d="M1332 1397 c-6 -7 -13 -56 -14 -108 l-3 -94 -94 -3 c-101 -3 -121 -11 -121 -48 0 -33 14 -38 120 -44 l95 -5 3 -95 c2 -75 6 -98 19 -107 22 -17 28 -16 47 3 12 12 16 37 16 110 l0 94 94 0 c100 0 126 10 126 50 0 30 -32 40 -129 40 l-91 0 0 100 c0 88 -2 100 -19 110 -26 13 -36 13 -49 -3z"/> <path d="M1035 530 c-69 -28 -96 -127 -53 -190 30 -44 61 -60 117 -60 37 0 49 5 82 39 35 35 39 44 39 91 0 47 -4 56 -39 91 -33 34 -45 39 -82 38 -24 0 -53 -4 -64 -9z"/> <path d="M1589 501 c-35 -35 -39 -44 -39 -91 0 -47 4 -56 39 -91 32 -33 45 -39 80 -39 54 0 97 22 121 63 55 90 -11 197 -121 197 -35 0 -48 -6 -80 -39z"/> </g> </svg> 
+                   <span> 500+ sold recently</span>
+                </p>
+              {% endif %}
+
+              {% if random_number < 300 %}
+                <p class="custom-sold-out" aria-hidden="true">
+                   <svg  version="1.0" xmlns="http://www.w3.org/2000/svg"  width="25px" height="25px" viewBox="0 0 225.000000 225.000000"  preserveAspectRatio="xMidYMid meet">  <g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)" fill="#4ecd4c" stroke="none"> <path d="M138 2009 c-21 -12 -24 -49 -6 -67 8 -8 63 -12 183 -12 l172 0 77 -292 c43 -161 86 -322 96 -358 10 -36 44 -164 75 -285 61 -235 85 -291 139 -324 33 -21 44 -21 540 -21 559 0 541 -2 590 63 32 42 40 81 72 362 14 127 33 299 43 384 17 149 17 155 -1 173 -17 17 -54 18 -742 18 l-724 0 -11 33 c-5 17 -27 95 -47 172 -20 77 -44 146 -52 153 -20 15 -378 17 -404 1z m1902 -474 c0 -14 -18 -183 -40 -377 -41 -353 -51 -397 -89 -418 -13 -6 -189 -10 -499 -10 l-479 0 -26 26 c-31 31 -24 10 -87 254 -114 437 -140 537 -140 543 0 4 306 7 680 7 l680 0 0 -25z"/> <path d="M1332 1397 c-6 -7 -13 -56 -14 -108 l-3 -94 -94 -3 c-101 -3 -121 -11 -121 -48 0 -33 14 -38 120 -44 l95 -5 3 -95 c2 -75 6 -98 19 -107 22 -17 28 -16 47 3 12 12 16 37 16 110 l0 94 94 0 c100 0 126 10 126 50 0 30 -32 40 -129 40 l-91 0 0 100 c0 88 -2 100 -19 110 -26 13 -36 13 -49 -3z"/> <path d="M1035 530 c-69 -28 -96 -127 -53 -190 30 -44 61 -60 117 -60 37 0 49 5 82 39 35 35 39 44 39 91 0 47 -4 56 -39 91 -33 34 -45 39 -82 38 -24 0 -53 -4 -64 -9z"/> <path d="M1589 501 c-35 -35 -39 -44 -39 -91 0 -47 4 -56 39 -91 32 -33 45 -39 80 -39 54 0 97 22 121 63 55 90 -11 197 -121 197 -35 0 -48 -6 -80 -39z"/> </g> </svg> 
+                   <span> 300+ sold recently</span>
+                </p>
+              {% endif %}
+
+              {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
+              {%- if card_product.quantity_price_breaks_configured? -%}
+                <div class="card__information-volume-pricing-note">
+                  <span class="caption">{{ 'products.product.volume_pricing.note' | t }}</span>
+                </div>
+              {%- endif -%}
+
+              {%- if card_product.tags contains 'freeshipping' -%}
+                <span class="custom-free-shipping"> FREE Shipping </span>
+              {%- endif -%}
           </div>
         </div>
         {%- if show_quick_add -%}
