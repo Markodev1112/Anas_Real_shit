@@ -54,57 +54,79 @@
         - div.price__regular: Displayed when there are no variants on sale
         - div.price__sale: Displayed when a variant is a sale
     {%- endcomment -%}
-    <div class="price__regular">
+
+    {% comment %} <div class="price__regular">
       {%- if product.quantity_price_breaks_configured? -%}
         {%- if show_compare_at_price and compare_at_price -%}
           {%- unless product.price_varies == false and product.compare_at_price_varies %}
-            <span class="visually-hidden visually-hidden--inline">
-              {{- 'products.product.price.regular_price' | t -}}
-            </span>
+            {% comment %} <span class="visually-hidden visually-hidden--inline">{{- 'products.product.price.regular_price' | t -}}</span> {% endcomment %}
             <span>
               <s class="price-item price-item--regular variant-item__old-price">
                 {% if settings.currency_code_enabled %}
-                  {{ compare_at_price | money_with_currency }}
+                  {{ compare_at_price | money_without_currency }}
                 {% else %}
-                  {{ compare_at_price | money }}
+                  {{ compare_at_price | money_without_currency }}
                 {% endif %}
               </s>
             </span>
           {%- endunless -%}
         {%- endif -%}
-        <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
+        {% comment %} <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span> {% endcomment %}
         <span class="price-item price-item--regular">
           {{- 'products.product.volume_pricing.price_range' | t: minimum: money_price_min, maximum: money_price_max -}}
         </span>
       {%- else -%}
-        <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-        <span class="a price-item price-item--regular">
-          {{ money_price }}
-        </span>
+        {% comment %} <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span> {% endcomment %}
+      <div class="price-group">
         <span class="currency">AED</span>
-
+        <span class="a price-item price-item--regular">
+          {{ money_price}}
+        </span>
+      </div>
       {%- endif -%}
-    </div>
+    </div> {% endcomment %}
+
     <div class="price__sale">
+      {% if compare_at_price %}
+        {% assign compare_price_cal = compare_at_price | money_without_currency %}
+        {% assign compare_cal = compare_price_cal | replace: ",", "" | floor %}
+        {% assign money_cal = money_price | split: " " | last | replace: ",", "" | floor %}
+        
+        {% assign price_off_cal = compare_cal | minus: money_cal %}
+
+        {% assign result = price_off_cal | times: 100 %}
+        {% assign price_off = result | divided_by: compare_cal %}
+        <span class="price-off " data-real="{{money_cal }}" data-comp="{{ compare_cal }}" data-comp-pre="{{price_off_cal}}">{{ price_off}}%</span>
+      {% endif %}
+
       {%- unless product.price_varies == false and product.compare_at_price_varies %}
-        <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
+        {% comment %} <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span> {% endcomment %}
         <span>
           <s class="price-item price-item--regular">
-            {% if settings.currency_code_enabled %}
-              {{ compare_at_price | money_with_currency }}
-            {% else %}
-              {{ compare_at_price | money }}
+            {% if compare_at_price  %}
+
+              {% assign compare_price = compare_at_price  %}
+
+              {% if settings.currency_code_enabled %}
+                {{ compare_at_price | money_without_currency | split: " " | last | replace: ",", "" | floor}}
+              {% else %}
+                {{ compare_at_price | money_without_currency | split: " " | last | replace: ",", "" | floor}}
+              {% endif %}
+              
             {% endif %}
           </s>
         </span>
       {%- endunless -%}
-      <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
-      <span class="a price-item price-item--sale price-item--last">
-        <strong>{{ money_price }}</strong>
-      </span>
-      <span class="currency">AED</span>
+      {% comment %} <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span> {% endcomment %}
+      <div class="price-group">
+        <span class="currency">AED</span>
+        <span class="a price-item price-item--sale price-item--last">
+          <strong>{{ money_price | split: " " | last | replace: ",", "" | floor }}</strong>
+        </span>
+      </div>
     </div>
-    <small class="unit-price caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
+    <span class="custom-free-shipping">FREE Shipping</span>
+    {% comment %} <small class="unit-price caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
       <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
       <span class="price-item price-item--last">
         <span>{{- product.selected_or_first_available_variant.unit_price | money -}}</span>
@@ -117,7 +139,7 @@
           {{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit }}
         </span>
       </span>
-    </small>
+    </small> {% endcomment %}
   </div>
   {%- if show_badges -%}
     <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">

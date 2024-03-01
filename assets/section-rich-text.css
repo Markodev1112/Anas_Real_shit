@@ -86,6 +86,9 @@
 }
 @media(max-width:768px) {
   .rich-text__heading {
-    font-size: 36px;
+    font-size: 32px;
+  }
+  .rich-text__wrapper {
+    width: 100%;
   }
 }
