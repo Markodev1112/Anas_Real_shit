@@ -8,7 +8,7 @@
             alt="{{ item.image.alt | escape }}"
             width="70"
             height="{{ 70 | divided_by: item.image.aspect_ratio | ceil }}"
-            loading="lazy"
+            loading="lazy" class="lazyload"
           >
         </div>
       {%- endif -%}

@@ -55,7 +55,7 @@
         {%- if card_product.featured_media -%}
           <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
               <div class="media media--transparent media--hover-effect">
-                <div class="image-warpper">
+                <div class="a image-warpper">
                 {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
                   <img
                     srcset="
@@ -70,7 +70,7 @@
                     src="{{ card_product.featured_media | image_url: width: 533 }}"
                     sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                     alt="{{ card_product.featured_media.alt | escape }}"
-                    class="motion-reduce"
+                    class="motion-reduce lazyload"
                     {% unless lazy_load == false %}
                       loading="lazy"
                     {% endunless %}
@@ -181,6 +181,7 @@
                   role="img"
                   aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: card_product.metafields.reviews.rating.value, rating_max: card_product.metafields.reviews.rating.value.scale_max }}"
                 >
+                  <span class="rating-value">{{card_product.metafields.reviews.rating.value }}</span>
                   <span
                     aria-hidden="true"
                     class="rating-star"
@@ -188,12 +189,12 @@
                   ></span>
                 </div>
                 <p class="rating-count caption">
-                  {% assign min = 6000 %}
-                  {% assign max = 10000 %}                 
+                  {% assign min = 6.0 %}
+                  {% assign max = 10.0 %}                 
                   {% assign diff = max | minus: min %}
-                  {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
-                  {%- assign rating_value = card_product.metafields.reviews.rating_count | plus: randomNumber -%}
-                  <span aria-hidden="true">({{ rating_value }})</span>
+                  {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min | divided_by: 1.1 | round: 1 %}
+                  {% comment %} {%- assign rating_value = card_product.metafields.reviews.rating_count | plus: randomNumber -%} {% endcomment %}
+                  <span aria-hidden="true">({{ randomNumber }}K)</span>
                  
 
 
@@ -223,14 +224,35 @@
               {% assign random_number = "now" | date: "%N" | modulo: diff_sold | plus: min_number %}
               {% if random_number > 300 %}
                 <p class="custom-sold-out" aria-hidden="true">
-                   <svg  version="1.0" xmlns="http://www.w3.org/2000/svg"  width="25px" height="25px" viewBox="0 0 225.000000 225.000000"  preserveAspectRatio="xMidYMid meet">  <g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)" fill="#4ecd4c" stroke="none"> <path d="M138 2009 c-21 -12 -24 -49 -6 -67 8 -8 63 -12 183 -12 l172 0 77 -292 c43 -161 86 -322 96 -358 10 -36 44 -164 75 -285 61 -235 85 -291 139 -324 33 -21 44 -21 540 -21 559 0 541 -2 590 63 32 42 40 81 72 362 14 127 33 299 43 384 17 149 17 155 -1 173 -17 17 -54 18 -742 18 l-724 0 -11 33 c-5 17 -27 95 -47 172 -20 77 -44 146 -52 153 -20 15 -378 17 -404 1z m1902 -474 c0 -14 -18 -183 -40 -377 -41 -353 -51 -397 -89 -418 -13 -6 -189 -10 -499 -10 l-479 0 -26 26 c-31 31 -24 10 -87 254 -114 437 -140 537 -140 543 0 4 306 7 680 7 l680 0 0 -25z"/> <path d="M1332 1397 c-6 -7 -13 -56 -14 -108 l-3 -94 -94 -3 c-101 -3 -121 -11 -121 -48 0 -33 14 -38 120 -44 l95 -5 3 -95 c2 -75 6 -98 19 -107 22 -17 28 -16 47 3 12 12 16 37 16 110 l0 94 94 0 c100 0 126 10 126 50 0 30 -32 40 -129 40 l-91 0 0 100 c0 88 -2 100 -19 110 -26 13 -36 13 -49 -3z"/> <path d="M1035 530 c-69 -28 -96 -127 -53 -190 30 -44 61 -60 117 -60 37 0 49 5 82 39 35 35 39 44 39 91 0 47 -4 56 -39 91 -33 34 -45 39 -82 38 -24 0 -53 -4 -64 -9z"/> <path d="M1589 501 c-35 -35 -39 -44 -39 -91 0 -47 4 -56 39 -91 32 -33 45 -39 80 -39 54 0 97 22 121 63 55 90 -11 197 -121 197 -35 0 -48 -6 -80 -39z"/> </g> </svg> 
+                   {% comment %} <svg  version="1.0" xmlns="http://www.w3.org/2000/svg"  width="20px" height="20px" viewBox="0 0 225.000000 225.000000"  preserveAspectRatio="xMidYMid meet">  <g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)" fill="#4ecd4c" stroke="none"> <path d="M138 2009 c-21 -12 -24 -49 -6 -67 8 -8 63 -12 183 -12 l172 0 77 -292 c43 -161 86 -322 96 -358 10 -36 44 -164 75 -285 61 -235 85 -291 139 -324 33 -21 44 -21 540 -21 559 0 541 -2 590 63 32 42 40 81 72 362 14 127 33 299 43 384 17 149 17 155 -1 173 -17 17 -54 18 -742 18 l-724 0 -11 33 c-5 17 -27 95 -47 172 -20 77 -44 146 -52 153 -20 15 -378 17 -404 1z m1902 -474 c0 -14 -18 -183 -40 -377 -41 -353 -51 -397 -89 -418 -13 -6 -189 -10 -499 -10 l-479 0 -26 26 c-31 31 -24 10 -87 254 -114 437 -140 537 -140 543 0 4 306 7 680 7 l680 0 0 -25z"/> <path d="M1332 1397 c-6 -7 -13 -56 -14 -108 l-3 -94 -94 -3 c-101 -3 -121 -11 -121 -48 0 -33 14 -38 120 -44 l95 -5 3 -95 c2 -75 6 -98 19 -107 22 -17 28 -16 47 3 12 12 16 37 16 110 l0 94 94 0 c100 0 126 10 126 50 0 30 -32 40 -129 40 l-91 0 0 100 c0 88 -2 100 -19 110 -26 13 -36 13 -49 -3z"/> <path d="M1035 530 c-69 -28 -96 -127 -53 -190 30 -44 61 -60 117 -60 37 0 49 5 82 39 35 35 39 44 39 91 0 47 -4 56 -39 91 -33 34 -45 39 -82 38 -24 0 -53 -4 -64 -9z"/> <path d="M1589 501 c-35 -35 -39 -44 -39 -91 0 -47 4 -56 39 -91 32 -33 45 -39 80 -39 54 0 97 22 121 63 55 90 -11 197 -121 197 -35 0 -48 -6 -80 -39z"/> </g> </svg>  {% endcomment %}
+                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="20px" height="2opx" viewBox="0 0 256 256" xml:space="preserve">
+                    <defs>
+                    </defs>
+                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                      <path d="M 73.713 65.44 H 27.689 c -3.566 0 -6.377 -2.578 -6.686 -6.13 c -0.21 -2.426 0.807 -4.605 2.592 -5.939 L 16.381 21.07 c -0.199 -0.889 0.017 -1.819 0.586 -2.53 s 1.431 -1.124 2.341 -1.124 H 87 c 0.972 0 1.884 0.471 2.446 1.263 c 0.563 0.792 0.706 1.808 0.386 2.725 l -7.798 22.344 c -1.091 3.13 -3.798 5.429 -7.063 5.999 l -47.389 8.281 c -0.011 0.001 -0.021 0.003 -0.032 0.005 c -0.228 0.04 -0.623 0.126 -0.568 0.759 c 0.056 0.648 0.48 0.648 0.708 0.648 h 46.024 c 1.657 0 3 1.343 3 3 S 75.37 65.44 73.713 65.44 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(93,211,83); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      <circle cx="28.25" cy="75.8" r="6.5" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(93,211,83); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                      <circle cx="68.28999999999999" cy="75.8" r="6.5" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(93,211,83); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                      <path d="M 19.306 23.417 c -1.374 0 -2.613 -0.95 -2.925 -2.347 l -1.375 -6.155 c -0.554 -2.48 -2.716 -4.212 -5.258 -4.212 H 3 c -1.657 0 -3 -1.343 -3 -3 s 1.343 -3 3 -3 h 6.749 c 5.372 0 9.942 3.662 11.113 8.904 l 1.375 6.155 c 0.361 1.617 -0.657 3.221 -2.274 3.582 C 19.742 23.393 19.522 23.417 19.306 23.417 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(93,211,83); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                    </g>
+                   </svg>
+
                    <span> 500+ sold recently</span>
                 </p>
               {% endif %}
 
               {% if random_number < 300 %}
                 <p class="custom-sold-out" aria-hidden="true">
-                   <svg  version="1.0" xmlns="http://www.w3.org/2000/svg"  width="25px" height="25px" viewBox="0 0 225.000000 225.000000"  preserveAspectRatio="xMidYMid meet">  <g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)" fill="#4ecd4c" stroke="none"> <path d="M138 2009 c-21 -12 -24 -49 -6 -67 8 -8 63 -12 183 -12 l172 0 77 -292 c43 -161 86 -322 96 -358 10 -36 44 -164 75 -285 61 -235 85 -291 139 -324 33 -21 44 -21 540 -21 559 0 541 -2 590 63 32 42 40 81 72 362 14 127 33 299 43 384 17 149 17 155 -1 173 -17 17 -54 18 -742 18 l-724 0 -11 33 c-5 17 -27 95 -47 172 -20 77 -44 146 -52 153 -20 15 -378 17 -404 1z m1902 -474 c0 -14 -18 -183 -40 -377 -41 -353 -51 -397 -89 -418 -13 -6 -189 -10 -499 -10 l-479 0 -26 26 c-31 31 -24 10 -87 254 -114 437 -140 537 -140 543 0 4 306 7 680 7 l680 0 0 -25z"/> <path d="M1332 1397 c-6 -7 -13 -56 -14 -108 l-3 -94 -94 -3 c-101 -3 -121 -11 -121 -48 0 -33 14 -38 120 -44 l95 -5 3 -95 c2 -75 6 -98 19 -107 22 -17 28 -16 47 3 12 12 16 37 16 110 l0 94 94 0 c100 0 126 10 126 50 0 30 -32 40 -129 40 l-91 0 0 100 c0 88 -2 100 -19 110 -26 13 -36 13 -49 -3z"/> <path d="M1035 530 c-69 -28 -96 -127 -53 -190 30 -44 61 -60 117 -60 37 0 49 5 82 39 35 35 39 44 39 91 0 47 -4 56 -39 91 -33 34 -45 39 -82 38 -24 0 -53 -4 -64 -9z"/> <path d="M1589 501 c-35 -35 -39 -44 -39 -91 0 -47 4 -56 39 -91 32 -33 45 -39 80 -39 54 0 97 22 121 63 55 90 -11 197 -121 197 -35 0 -48 -6 -80 -39z"/> </g> </svg> 
+                   {% comment %} <svg  version="1.0" xmlns="http://www.w3.org/2000/svg"  width="20px" height="20px" viewBox="0 0 225.000000 225.000000"  preserveAspectRatio="xMidYMid meet">  <g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)" fill="#4ecd4c" stroke="none"> <path d="M138 2009 c-21 -12 -24 -49 -6 -67 8 -8 63 -12 183 -12 l172 0 77 -292 c43 -161 86 -322 96 -358 10 -36 44 -164 75 -285 61 -235 85 -291 139 -324 33 -21 44 -21 540 -21 559 0 541 -2 590 63 32 42 40 81 72 362 14 127 33 299 43 384 17 149 17 155 -1 173 -17 17 -54 18 -742 18 l-724 0 -11 33 c-5 17 -27 95 -47 172 -20 77 -44 146 -52 153 -20 15 -378 17 -404 1z m1902 -474 c0 -14 -18 -183 -40 -377 -41 -353 -51 -397 -89 -418 -13 -6 -189 -10 -499 -10 l-479 0 -26 26 c-31 31 -24 10 -87 254 -114 437 -140 537 -140 543 0 4 306 7 680 7 l680 0 0 -25z"/> <path d="M1332 1397 c-6 -7 -13 -56 -14 -108 l-3 -94 -94 -3 c-101 -3 -121 -11 -121 -48 0 -33 14 -38 120 -44 l95 -5 3 -95 c2 -75 6 -98 19 -107 22 -17 28 -16 47 3 12 12 16 37 16 110 l0 94 94 0 c100 0 126 10 126 50 0 30 -32 40 -129 40 l-91 0 0 100 c0 88 -2 100 -19 110 -26 13 -36 13 -49 -3z"/> <path d="M1035 530 c-69 -28 -96 -127 -53 -190 30 -44 61 -60 117 -60 37 0 49 5 82 39 35 35 39 44 39 91 0 47 -4 56 -39 91 -33 34 -45 39 -82 38 -24 0 -53 -4 -64 -9z"/> <path d="M1589 501 c-35 -35 -39 -44 -39 -91 0 -47 4 -56 39 -91 32 -33 45 -39 80 -39 54 0 97 22 121 63 55 90 -11 197 -121 197 -35 0 -48 -6 -80 -39z"/> </g> </svg>  {% endcomment %}
+                   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="20px" height="2opx" viewBox="0 0 256 256" xml:space="preserve">
+                    <defs>
+                    </defs>
+                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                      <path d="M 73.713 65.44 H 27.689 c -3.566 0 -6.377 -2.578 -6.686 -6.13 c -0.21 -2.426 0.807 -4.605 2.592 -5.939 L 16.381 21.07 c -0.199 -0.889 0.017 -1.819 0.586 -2.53 s 1.431 -1.124 2.341 -1.124 H 87 c 0.972 0 1.884 0.471 2.446 1.263 c 0.563 0.792 0.706 1.808 0.386 2.725 l -7.798 22.344 c -1.091 3.13 -3.798 5.429 -7.063 5.999 l -47.389 8.281 c -0.011 0.001 -0.021 0.003 -0.032 0.005 c -0.228 0.04 -0.623 0.126 -0.568 0.759 c 0.056 0.648 0.48 0.648 0.708 0.648 h 46.024 c 1.657 0 3 1.343 3 3 S 75.37 65.44 73.713 65.44 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(93,211,83); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                      <circle cx="28.25" cy="75.8" r="6.5" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(93,211,83); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                      <circle cx="68.28999999999999" cy="75.8" r="6.5" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(93,211,83); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                      <path d="M 19.306 23.417 c -1.374 0 -2.613 -0.95 -2.925 -2.347 l -1.375 -6.155 c -0.554 -2.48 -2.716 -4.212 -5.258 -4.212 H 3 c -1.657 0 -3 -1.343 -3 -3 s 1.343 -3 3 -3 h 6.749 c 5.372 0 9.942 3.662 11.113 8.904 l 1.375 6.155 c 0.361 1.617 -0.657 3.221 -2.274 3.582 C 19.742 23.393 19.522 23.417 19.306 23.417 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(93,211,83); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                    </g>
+                   </svg>
                    <span> 300+ sold recently</span>
                 </p>
               {% endif %}
@@ -242,9 +264,7 @@
                 </div>
               {%- endif -%}
 
-              {%- if card_product.tags contains 'freeshipping' -%}
-                <span class="custom-free-shipping"> FREE Shipping </span>
-              {%- endif -%}
+              
           </div>
         </div>
         {%- if show_quick_add -%}

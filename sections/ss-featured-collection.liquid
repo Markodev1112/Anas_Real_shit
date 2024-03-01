@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-
 {%- liquid 
   assign padding_horizontal = section.settings.padding_horizontal
   assign padding_horizontal_mobile = section.settings.padding_horizontal_mobile
@@ -695,11 +693,11 @@
                 {% for item in items limit:product_show %}
                   <a href="{{ item.url }}" class="swiper-slide">
                     <div class="featured-collection-image-{{ section.id }} {% if item.images.size > 1 %} has-secondary-{{ section.id }} {% endif %}">
-                      <img class="{% if item.images.size > 1 %}featured-collection-first-image-{{ section.id }}{% endif %}" src="{{ item.featured_image | image_url }}" {% if section.settings.lazy_load %} loading="lazy" {% endif %}>
+                      <img class="lazyload {% if item.images.size > 1 %}featured-collection-first-image-{{ section.id }}{% endif %}" src="{{ item.featured_image | image_url }}" {% if section.settings.lazy_load %} loading="lazy" {% endif %}>
                       {% if item.images.size > 1 %}
                         {% for img in item.images %}
                           {% if forloop.index == 2 %}
-                            <img class="featured-collection-second-image-{{ section.id }}" src="{{ img | image_url }}" {% if section.settings.lazy_load %} loading="lazy" {% endif %}>
+                            <img class="lazyload featured-collection-second-image-{{ section.id }}" src="{{ img | image_url }}" {% if section.settings.lazy_load %} loading="lazy" {% endif %}>
                           {% endif %}
                         {% endfor %}
                       {% endif %}
@@ -748,11 +746,11 @@
               {% for item in items limit:product_show %}
                   <a href="{{ item.url }}" class="featured-collection-item-{{ section.id }}">
                     <div class="featured-collection-image-{{ section.id }} {% if item.images.size > 1 %} has-secondary-{{ section.id }} {% endif %}">
-                      <img class="{% if item.images.size > 1 %}featured-collection-first-image-{{ section.id }}{% endif %}" src="{{ item.featured_image | image_url }}">
+                      <img class="lazyload {% if item.images.size > 1 %}featured-collection-first-image-{{ section.id }}{% endif %}" src="{{ item.featured_image | image_url }}">
                       {% if item.images.size > 1 %}
                         {% for img in item.images %}
                           {% if forloop.index == 2 %}
-                            <img class="featured-collection-second-image-{{ section.id }}" src="{{ img | image_url }}">
+                            <img class="lazyload featured-collection-second-image-{{ section.id }}" src="{{ img | image_url }}">
                           {% endif %}
                         {% endfor %}
                       {% endif %}

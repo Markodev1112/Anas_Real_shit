@@ -12,6 +12,15 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  .custom-rich-text  {
+    border-bottom: 1px solid #ddd;
+  }
+  @media(max-width:768px) {
+    .section-{{ section.id }}-padding {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
 {%- endstyle -%}
 
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
@@ -98,7 +107,7 @@
 {
   "name": "t:sections.rich-text.name",
   "tag": "section",
-  "class": "section",
+  "class": "custom-rich-text section",
   "disabled_on": {
     "groups": ["header", "footer"]
   },

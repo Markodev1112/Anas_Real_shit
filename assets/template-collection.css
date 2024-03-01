@@ -121,6 +121,12 @@
 }
 .collection__title h2 {
   margin: 0;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 36px;
+}
+.custom-mobile.desktop {
+  background-color: #ddd;
 }
 @media(max-width:768px) {
   .custom-collection {
@@ -134,5 +140,13 @@
   }
   .collection__title {
     padding: 20px;
+  }
+  .collection__title h2 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 0;
+  }
+  .collection__title.title-wrapper {
+    margin-bottom: 0;
   }
 }

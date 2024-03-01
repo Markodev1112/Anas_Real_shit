@@ -17,6 +17,9 @@
 {%- endif -%}
 
 {%- style -%}
+  .custom-featured-collection {
+    border-bottom: 1px solid #ddd;
+  }
   .section-{{ section.id }}-padding {
     margin-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -35,6 +38,9 @@
   @media(max-width: 768px) {
     .custom-mobile.desktop {
       display: none; 
+    }
+    .section-{{ section.id }}-padding {
+      margin-top: 0;
     }
     .custom-mobile.mobile {
       display: block;
@@ -69,7 +75,7 @@
         <img
             src="{{ section.settings.header_image | image_url: width: 140 }}"
             alt="{{ section.settings.header_image | escape }}"
-            loading="lazy"
+            loading="lazy" class="lazyload"
           >
       {% endif %}
       {%- if section.settings.title != blank -%}
@@ -270,7 +276,7 @@
 {
   "name": "t:sections.featured-collection.name",
   "tag": "section",
-  "class": "section",
+  "class": "custom-featured-collection section",
   "disabled_on": {
     "groups": ["header", "footer"]
   },

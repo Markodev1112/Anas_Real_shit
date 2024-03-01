@@ -20,6 +20,9 @@
     max-width: 1440px;
     margin: auto;
   }
+  .ss-section {
+    border-bottom: 1px solid #ddd;
+  }
 {%- endstyle -%}
 
   {% if section.settings.heading_custom %}
@@ -32,7 +35,7 @@
     </style>
   {% endif %}
 
-<div class="desktop {{ section.id }} custom-width" style="background-color:{{section.settings.background-color}}; border-bottom: 1px solid #ddd;">
+<div class="desktop {{ section.id }} custom-width" style="background-color:{{section.settings.background-color}};">
   <div class=" section-{{ section.id }}-padding">
     <div class="bubble-container-{{section.id}} custom-bubble">
 		{%- for block in section.blocks -%}
@@ -53,9 +56,9 @@
   </div>
 </div>
 
-<div class="mobile {{ section.id }}" style="background-color:{{section.settings.background-color}}; border-bottom: 1px solid #ddd;">
+<div class="mobile {{ section.id }}" style="background-color:{{section.settings.background-color}};">
   <div class=" section-{{ section.id }}-padding  header-swipelect swipelect--per-view-4">
-    <div class="bubble-container-{{section.id}} swipelect__container swiper-header-container ">
+    <div class="bubble-container-{{section.id}} swipelect__container swiper-ss-container ">
       <div class=" swiper-wrapper">
         {%- for block in section.blocks -%}
               <div class="bubble_item swipelect__slide swiper-slide">
@@ -193,7 +196,7 @@
 {% schema %}
   {
     "name": "SS - Circle menu",
-	"class": "section",
+	"class": "ss-section",
 	"tag": "section",
     "settings": [
         {
