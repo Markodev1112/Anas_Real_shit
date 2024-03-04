@@ -86,7 +86,7 @@
 }
 @media(max-width:768px) {
   .rich-text__heading {
-    font-size: 32px;
+    font-size: 30px;
   }
   .rich-text__wrapper {
     width: 100%;

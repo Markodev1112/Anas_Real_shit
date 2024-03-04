@@ -538,6 +538,7 @@
 .card-wrapper .card_text.card__content {
   height: 165px;
   background-color: #f5f5f5;
+  position: relative;
 }
 
 .card-wrapper .card_text.card__content .card__information {
@@ -548,7 +549,7 @@
 .card-wrapper .card_text.card__content a {
   overflow: hidden;
   font-size: 16px;
-  max-height: 85px;
+  max-height: 60px;
   font-weight: 400;
 }
 
@@ -567,11 +568,13 @@
 .card-wrapper .card_text.card__content .card-information .price__sale {
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
+  align-items: baseline;
   gap: 10px;
   justify-content: start;
   flex-wrap: unset;
+  margin-top: 5px;
 }
+
 .card-wrapper .card_text.card__content .card-information .price-off {
   color: #4ECD4B;
   font-size: 14px;
@@ -582,7 +585,12 @@
   font-size: 16px;
 }
 .card-information .custom-rating {
-  margin-top: 0 !important;  
+  margin-top: 0 !important; 
+  width: 100%;
+  justify-content: start;
+  position: absolute;
+  top: -20%;
+  left: 5%;
 }
 .card-information .rating-text {
   margin-top: 0 !important;
@@ -592,6 +600,7 @@
 }
 .card-information .custom-free-shipping {
   margin-top: 5px !important; 
+  display: block;
 }
 @media(max-width:768px) {
   .custom-mobile .card__media .media img {
@@ -608,8 +617,9 @@
   }
 
   .custom-mobile .card_text.card__content {
-    height: 145px;
+    height: 135px;
     position: relative;
+    padding: 10px 0;
   }
 
   .custom-mobile .card__media {
@@ -654,19 +664,17 @@
     margin: 0;
     margin-top: 20px;
   }
+  .card-wrapper .card_text.card__content {
+    height: 135px;
+    padding: 10px 2px;
+  }
   .card-wrapper .card_text.card__content a { 
     max-height: 36px;
   }
   .card-wrapper .card_text.card__content a.show-review {
     max-height: 36px !important;
   }
-  .card-information .custom-rating {
-    width: 100%;
-    justify-content: start;
-    position: absolute;
-    top: -20%;
-    left: 5%;
-  }
+  
   .card-information .custom-rating .rating .rating-value {
     font-size: 14px;
     font-weight: 400;
@@ -689,7 +697,7 @@
     letter-spacing: 0;
   }
   .card-wrapper .card-information .price__container .price__sale .price-item--last {
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0;
   }
   .card-wrapper .card-information .price__container {
@@ -699,9 +707,10 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: baseline;
-    gap: 5px;
+    gap: 0px;
     flex-wrap: unset;
     justify-content: start;
+    width: 100%;
   }
   
   .card-wrapper .card__content .card__heading a {
@@ -710,6 +719,16 @@
     font-weight: 500;
   }
   .card-wrapper .card_text.card__content .card__information {
-    padding: 0 10px;
+    padding: 0 5px;
+  }
+  .card-wrapper .card_text.card__content .card-information .price-off {
+    width: 20%;
+    
+  }
+  .card-wrapper .card_text.card__content .compare-price {
+    width: 25%;
+  }
+  .card-wrapper .card_text.card__content .price-group {
+    width: 55%;
   }
 }

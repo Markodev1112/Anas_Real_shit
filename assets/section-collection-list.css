@@ -79,6 +79,10 @@
   }
   .collection-list-title {
     margin-left: 0;
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .custom-collection-list .card-wrapper .card__content .card__heading a {
+    font-size: 12px;
   }
 }

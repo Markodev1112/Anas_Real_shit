@@ -155,12 +155,18 @@
   	}
     
     .bubble_text {
-    	font-size: 14px;
+    	font-size: 12px;
       margin-top:10px;
       font-weight: 400;
     }
     .custom-width {
       width: 90%;
+    }
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: block;
     }
   
    }
@@ -182,15 +188,8 @@
    }
    .mobile {
       display: none;
-  }
-  @media(max-width:768px) {
-    .desktop {
-      display: none;
-    }
-    .mobile {
-      display: block;
-    }
-  }
+   }
+  
 </style>
 
 {% schema %}

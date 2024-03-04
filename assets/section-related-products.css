@@ -5,3 +5,26 @@
 .related-products__heading {
   margin: 0 0 3rem;
 }
+.related-products ul {
+  background-color: #ddd;
+  padding: 20px;
+  margin: 0;
+}
+@media(max-width: 768px) {
+  .related-products ul {
+    padding: 20px 5px;
+    padding-bottom: 10px;
+  }
+  .related-products ul li {
+    margin-bottom: 10px;
+  }
+  .related-products h2 {
+    margin: 0;
+    padding: 10px;
+    background-color: #fff;
+  }
+  .related-products {
+    padding: 0 !important;
+  }
+
+}

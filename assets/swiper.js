@@ -21,9 +21,6 @@ var swiper = new Swiper(".swiper-container", {
 });
 
 
-
-
-
 var swiper = new Swiper(".swiper-header-container", {
   slidesPerView: 4,
   centeredSlides: false,

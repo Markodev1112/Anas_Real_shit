@@ -693,11 +693,11 @@
                 {% for item in items limit:product_show %}
                   <a href="{{ item.url }}" class="swiper-slide">
                     <div class="featured-collection-image-{{ section.id }} {% if item.images.size > 1 %} has-secondary-{{ section.id }} {% endif %}">
-                      <img class="lazyload {% if item.images.size > 1 %}featured-collection-first-image-{{ section.id }}{% endif %}" src="{{ item.featured_image | image_url }}" {% if section.settings.lazy_load %} loading="lazy" {% endif %}>
+                      <img class="lazyload {% if item.images.size > 1 %}featured-collection-first-image-{{ section.id }}{% endif %}" src="{{ item.featured_image | image_url }}" {% if section.settings.lazy_load %} loading="lazy" {% endif %} alt="image">
                       {% if item.images.size > 1 %}
                         {% for img in item.images %}
                           {% if forloop.index == 2 %}
-                            <img class="lazyload featured-collection-second-image-{{ section.id }}" src="{{ img | image_url }}" {% if section.settings.lazy_load %} loading="lazy" {% endif %}>
+                            <img class="lazyload featured-collection-second-image-{{ section.id }}" src="{{ img | image_url }}" {% if section.settings.lazy_load %} loading="lazy" {% endif %} alt="image">
                           {% endif %}
                         {% endfor %}
                       {% endif %}
@@ -746,11 +746,11 @@
               {% for item in items limit:product_show %}
                   <a href="{{ item.url }}" class="featured-collection-item-{{ section.id }}">
                     <div class="featured-collection-image-{{ section.id }} {% if item.images.size > 1 %} has-secondary-{{ section.id }} {% endif %}">
-                      <img class="lazyload {% if item.images.size > 1 %}featured-collection-first-image-{{ section.id }}{% endif %}" src="{{ item.featured_image | image_url }}">
+                      <img class="lazyload {% if item.images.size > 1 %}featured-collection-first-image-{{ section.id }}{% endif %}" src="{{ item.featured_image | image_url }}" alt="image">
                       {% if item.images.size > 1 %}
                         {% for img in item.images %}
                           {% if forloop.index == 2 %}
-                            <img class="lazyload featured-collection-second-image-{{ section.id }}" src="{{ img | image_url }}">
+                            <img class="lazyload featured-collection-second-image-{{ section.id }}" src="{{ img | image_url }}" alt="image">
                           {% endif %}
                         {% endfor %}
                       {% endif %}
@@ -785,7 +785,7 @@
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.js"></script>
+{% comment %} <script src="https://cdn.jsdelivr.net/npm/swiper@6.8.4/swiper-bundle.min.js"></script>
 
 <script>
   function initFeaturedCollection() {
@@ -830,7 +830,7 @@
      document.addEventListener('shopify:section:settings:change', initFeaturedCollection);
   }
   
-</script>
+</script> {% endcomment %}
 
 {% schema %}
   {
