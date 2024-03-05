@@ -41,10 +41,10 @@
     }
     .section-{{ section.id }}-padding {
       margin-top: 0;
-      padding-bottom: 15px;
-
     }
-
+    .section-{{ section.id }}-padding {
+      padding-bottom: 15px;
+    }
     .custom-mobile.mobile {
       display: block;
     }
@@ -277,7 +277,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.featured-collection.name",
+  "name": "Ramadan Collection",
   "tag": "section",
   "class": "custom-featured-collection section",
   "disabled_on": {
@@ -355,7 +355,7 @@
       "type": "range",
       "id": "products_to_show",
       "min": 2,
-      "max": 25,
+      "max": 90,
       "step": 1,
       "default": 4,
       "label": "t:sections.featured-collection.settings.products_to_show.label"
@@ -558,7 +558,7 @@
   ],
   "presets": [
     {
-      "name": "t:sections.featured-collection.presets.name"
+      "name": "Ramadan Featured Collection"
     }
   ]
 }

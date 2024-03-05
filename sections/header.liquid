@@ -173,7 +173,7 @@
       flex-direction: column;
     }
     .custom-header .header__heading-logo-wrapper{
-      padding: 10px 0;
+      padding: 0;
     }
     .custom-header .menu-mobile {
       /* margin-top: 15px; */
@@ -239,11 +239,13 @@
     }
    
     .custom-header.show {
-      height: 175px;
+      height: 150px;
       transition: height .5s ease;
+      margin-bottom: 10px;
+
     }
     .custom-header.hidden {
-      height: 85px;
+      height: 60px;
       transition: height .5s ease;
     }
     .custom-header.show .custom-mobile-setting{
@@ -743,6 +745,7 @@
       "default": "main-menu",
       "label": "t:sections.header.settings.menu.label"
     },
+    
     {
       "type": "select",
       "id": "menu_type_desktop",

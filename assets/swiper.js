@@ -95,14 +95,7 @@ var swiper = new Swiper(".swiper-ss-container", {
   speed: 1500,
   freeModeMomentumRatio: 0.3,
   freeModeMomentumVelocityRatio: 1,
-  // centeredSlidesBounds: true,
-//   on: {
-// 	snapGridLengthChange:function(){
-// 		if( this.snapGrid.length != this.slidesGrid.length ){
-// 			this.snapGrid = this.slidesGrid.slice(0);
-// 		}
-// 	}
-// }
+  
 });
 
 

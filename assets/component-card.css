@@ -536,7 +536,7 @@
 }
 
 .card-wrapper .card_text.card__content {
-  height: 165px;
+  height: 170px;
   background-color: #f5f5f5;
   position: relative;
 }
@@ -577,12 +577,12 @@
 
 .card-wrapper .card_text.card__content .card-information .price-off {
   color: #4ECD4B;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: 0;
 }
 
 .card-wrapper .card-information .price__container .price__sale .price-item--last {
-  font-size: 16px;
+  font-size: 24px;
 }
 .card-information .custom-rating {
   margin-top: 0 !important; 
@@ -599,7 +599,6 @@
   margin-top: 0 !important;
 }
 .card-information .custom-free-shipping {
-  margin-top: 5px !important; 
   display: block;
 }
 @media(max-width:768px) {
@@ -608,7 +607,7 @@
   }
 
   .custom-mobile {
-    padding: 20px 10px !important;
+    padding: 0px 10px !important;
     background-color: #ddd;
   }
 
@@ -723,6 +722,7 @@
   }
   .card-wrapper .card_text.card__content .card-information .price-off {
     width: 20%;
+    font-size: 14px;
     
   }
   .card-wrapper .card_text.card__content .compare-price {

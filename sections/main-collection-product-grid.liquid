@@ -38,6 +38,12 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  @media(max-width:768px) {
+    .section-{{ section.id }}-padding {
+    padding-top: 0px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  }
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
@@ -126,7 +132,7 @@
       {%- endif -%}
 
       <div
-        class="custom-collection product-grid-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+        class="a custom-collection product-grid-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
         id="ProductGridContainer"
         {% if settings.animations_reveal_on_scroll %}
           data-cascade
