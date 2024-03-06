@@ -1598,3 +1598,11 @@ a.product__text {
     border: none;
   }
 }
+
+/* custom css */
+@media(max-width:768px) {
+}
+.celwidget {
+  max-height: 400px;
+  overflow: overlay;
+}

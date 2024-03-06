@@ -128,6 +128,50 @@
 .custom-mobile.desktop {
   background-color: #ddd;
 }
+/* custom-btn */
+.collection__view-all a {
+  background-color: unset;
+  --border-offset: unset;
+  border-radius: 3px;
+}
+.collection__view-all a.button:not([disabled]):hover:after {
+  --border-offset: unset;
+}
+
+.custom-btn {
+  background: rgb(22, 9, 240);
+  background: linear-gradient(0deg, rgba(22, 9, 240, 1) 0%, rgba(49, 110, 244, 1) 100%);
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.custom-btn:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(.1);
+  transform: scale(.1);
+}
+
+.custom-btn:hover {
+  color: #fff;
+  border: none;
+  background: transparent;
+}
+
+.custom-btn:hover:after {
+  background: rgb(0, 3, 255);
+  background: linear-gradient(0deg, rgba(2, 126, 251, 1) 0%, rgba(0, 3, 255, 1)100%);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
 @media(max-width:768px) {
   .custom-collection {
     padding-top: 0;
@@ -142,11 +186,16 @@
     padding: 20px;
   }
   .collection__title h2 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     padding-bottom: 0;
   }
   .collection__title.title-wrapper {
     margin-bottom: 0;
   }
+  .custom-btn {
+    min-height: 40px;
+  }
+    
+  
 }

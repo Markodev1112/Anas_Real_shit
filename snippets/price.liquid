@@ -101,7 +101,7 @@
 
       {%- unless product.price_varies == false and product.compare_at_price_varies %}
         {% comment %} <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span> {% endcomment %}
-        <span>
+        <span class="compare-price">
           <s class="price-item price-item--regular">
             {% if compare_at_price  %}
 

@@ -28,3 +28,4 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
 } else {
     console.log("User is not on a mobile device.");
 }
+

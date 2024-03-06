@@ -165,11 +165,11 @@
       >
         <a
           href="{{ routes.collections_url }}"
-          class="button"
+          class="button custom-btn"
           id="ViewAllButton-{{ section.id }}"
           aria-labelledby="ViewAllButton-{{ section.id }} SectionHeading-{{ section.id }}"
-        >
-          {{- 'sections.collection_list.view_all' | t -}}
+        >{{- 'sections.collection_list.view_all' | t -}}
+          
         </a>
       </div>
     {%- endif -%}
