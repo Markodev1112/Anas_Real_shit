@@ -25,10 +25,9 @@
 <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
 
-<style>
- 
+{%- style -%}
 
-  header-drawer {
+  .header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
   }
@@ -37,14 +36,6 @@
     .scrolled-past-header .header__heading-logo-wrapper {
       width: 75%;
     }
-  {%- endif -%}
-
-  {%- if section.settings.menu_type_desktop != "drawer" -%}
-    {% comment %} @media screen and (min-width: 990px) {
-      header-drawer {
-        display: none;
-      }
-    } {% endcomment %}
   {%- endif -%}
 
   .menu-drawer-container {
@@ -77,18 +68,7 @@
     padding-bottom: 1rem;
     padding-top: 1rem;
     line-height: calc(1 + 0.8 / var(--font-body-scale));
-  }
-
-  @media screen and (min-width: 750px) {
-    .list-menu__item--link {
-      padding-bottom: 0.5rem;
-      padding-top: 0.5rem;
-    }
-  }
-</style>
-
-{%- style -%}
-  
+  }  
   .mobile-header {
     display: none;
   }
@@ -104,21 +84,6 @@
     
     padding: 0 20px;
   }
-  /* .custom-header nav span {
-    color: #000;
-  }
-  .custom-header nav .icon.icon-caret {
-    color: #fff;
-  }
-  .custom-header .icon.icon-account {
-    color: #fff;
-  }
-  .custom-header .icon.icon-cart-empty {
-    color: #fff;
-  }
-  .custom-header .icon.icon-cart {
-    color: #fff;
-  } */
   .custom-header .header-logo-serach-wrapper {
     display: flex;
     align-items: center;
@@ -145,18 +110,41 @@
   .custom-header .header-logo-serach-wrapper .field::after {
     box-shadow: unset;
   } 
+  .section-header {
+    position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
+    margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
+  }
+  
+  @media screen and (min-width: 750px) {
+    .list-menu__item--link {
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-header {
+      margin-bottom: {{ section.settings.margin_bottom }}px;
+    }
+  }
+
+  @media screen and (min-width: 990px) {
+    .header {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
 
   @media(max-width:768px) {
     .custom-header {
       background-color: unset;
     }
     .custom-header-image {
-      /* background-image:url("{{ section.settings.header_bg_img | img_url: 'master' }}"); */
       background-size: cover;
     }
     .custom-header nav {
       background-color: unset;
-      padding: 0;
+      padding: 3px 0;
     }
     .custom-header .mobile-header {
       display: block;
@@ -194,15 +182,92 @@
     .custom-header .menu-mobile ul li {
       list-style: none;
       font-size: 14px;
-      width: 30%;
       text-align: center;
       border: 1px solid #999292;
-      border-radius: 5px;
+      border-radius: 3px;
       padding: 5px;
       background-color: #fff;
-      background-color: {{ section.settings.menu_color }};
       width: max-content !important;
+      border: unset;
     }
+
+    .custom-header .menu-mobile ul li.btn-9 {
+      border: none;
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+
+    .custom-header .menu-mobile ul li.btn-9:after {
+      position: absolute;
+      content: " ";
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #1fd1f9;
+      background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+      transition: all 0.3s ease;
+    }
+    .custom-header .menu-mobile ul li.btn-9:hover {
+      background: transparent;
+      box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                  -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+        inset -4px -4px 6px 0 rgba(255,255,255,.5),
+        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+      color: #fff;
+    }
+    .custom-header .menu-mobile ul li.btn-9:hover:after {
+      -webkit-transform: scale(2) rotate(180deg);
+      transform: scale(2) rotate(180deg);
+      box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                  -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+        inset -4px -4px 6px 0 rgba(255,255,255,.5),
+        inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    }
+
+    .custom-header .menu-mobile ul li:first-child {
+        border: none;
+          color: #fff;
+          overflow: hidden;
+      }
+      
+
+      .custom-header .menu-mobile ul li:first-child:hover {
+          text-decoration: none;
+          color: #fff;
+      }
+      .custom-header .menu-mobile ul li:first-child:before {
+          position: absolute;
+          content: '';
+          display: inline-block;
+          top: -180px;
+          left: 0;
+          width: 30px;
+          height: 100%;
+          background-color: #fff;
+          animation: shiny-btn1 3s ease-in-out infinite;
+      }
+      .custom-header .menu-mobile ul li:first-child:hover{
+        opacity: .7;
+      }
+      .custom-header .menu-mobile ul li:first-child:active{
+        box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                    -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+          inset -4px -4px 6px 0 rgba(255,255,255,.2),
+          inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+      }
+
+
+      @-webkit-keyframes shiny-btn1 {
+          0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+          80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+          81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+          100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+      }
+
+
+
     .custom-header .menu-mobile li:hover {
       background-color: #000;
     }
@@ -216,14 +281,17 @@
     }
     
     .custom-header .field__label {
-      font-size: 16px;
+      font-size: 14px;
       color: #7d7676;
       font-family: sans-serif;
       left: 40px;
-      line-height: 25px;
+      line-height: 15px;
       font-weight: 400;  
       left: 20px;
        
+    }
+    .custom-header .field__button {
+      height: 36px;
     }
     .custom-header .field__input:focus~.field__label {
       display: none !important;
@@ -237,7 +305,9 @@
       display: block;
       padding: 0;
     }
-   
+    .custom-header .search__input.field__input {
+      height: 35px;
+    }
     .custom-header.show {
       height: 150px;
       transition: height .5s ease;
@@ -260,23 +330,6 @@
     
   }
 
-  .section-header {
-    position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
-    margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-header {
-      margin-bottom: {{ section.settings.margin_bottom }}px;
-    }
-  }
-
-  @media screen and (min-width: 990px) {
-    .header {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
 {%- endstyle -%}
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
@@ -310,6 +363,8 @@
     endif
   endfor
 -%}
+
+
 
 <{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
   {%- liquid
@@ -521,6 +576,7 @@
     %}
 
   </header>
+  
   
 </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 

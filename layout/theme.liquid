@@ -327,6 +327,8 @@
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'section-scroll.css' | asset_url | stylesheet_tag }}
+
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -366,9 +368,11 @@
 
     {% render 'delivery_coder' %}
     {% render 'rapid-search-settings' %}
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+    
     <img
       width="99999"
       alt="image"
@@ -376,6 +380,7 @@
       style="pointer-events: none; position: absolute; top: 0; left: 0; width: 100%; height: 99vh; max-width: 99vw; max-height: 99vh;"
       src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI5OTk5OXB4IiBoZWlnaHQ9Ijk5OTk5cHgiIHZpZXdCb3g9IjAgMCA5OTk5OSA5OTk5OSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBzdHJva2U9Im5vbmUiIGZpbGw9Im5vbmUiIGZpbGwtb3BhY2l0eT0iMCI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9Ijk5OTk5IiBoZWlnaHQ9Ijk5OTk5Ij48L3JlY3Q+IDwvZz4gPC9zdmc+"
     >
+
 
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
@@ -449,5 +454,52 @@
         color: #000000;
       }
     </style>
+
+    
+
+    <!-- Body content goes here -->
+
+    <!-- Scroll-to-top button code -->
+    <button id="scrollToTopBtn"><i class="icon-chevron-up"></i></button>
+    <style>
+      #scrollToTopBtn {
+          position: fixed;
+          bottom: 80px;
+          right: 10px;
+          display: none;
+          background-color: #000;
+          color: white;
+          border: none;
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          font-size: 20px;
+          cursor: pointer;
+      }
+      #scrollToTopBtn:hover {
+          background: rgba(0, 0, 0, 0.9);
+      }
+      #scrollToTopBtn:hover i {
+        top: 5px;
+      }
+
+    </style>
+    <!-- JavaScript code for scroll-to-top functionality -->
+    <script>
+        document.getElementById("scrollToTopBtn").addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+        window.addEventListener("scroll", function() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("scrollToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollToTopBtn").style.display = "none";
+            }
+        });
+    </script>
   </body>
 </html>
