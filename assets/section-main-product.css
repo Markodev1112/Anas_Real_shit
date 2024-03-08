@@ -1421,7 +1421,10 @@ a.product__text {
 .product-media-container.constrain-height .media {
   padding-top: min(var(--constrained-height), var(--ratio-percent));
 }
-
+.block-title {
+  font-size: 24px;
+  font-weight: 700;
+}
 @media screen and (max-width: 749px) {
   .product-media-container.media-fit-cover {
     display: flex;
@@ -1600,9 +1603,33 @@ a.product__text {
 }
 
 /* custom css */
-@media(max-width:768px) {
-}
 .celwidget {
   max-height: 400px;
   overflow: overlay;
+}
+@media(max-width:768px) {  
+  .product__title h1 {
+    font-size: 20px;
+  }
+  
+  .block-title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .product__description ul {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .product__info-wrapper .product__description {
+    margin: 0;
+    font-weight: 400;
+  }
+  .msg__container {
+    font-weight: 400;
+  }
+  .celwidget h3 {
+    font-weight: 600;
+  }
 }

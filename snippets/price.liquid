@@ -108,9 +108,11 @@
               {% assign compare_price = compare_at_price  %}
 
               {% if settings.currency_code_enabled %}
-                {{ compare_at_price | money_without_currency | split: " " | last | replace: ",", "" | floor}}
+                {% comment %} {{ compare_at_price | money_without_currency | split: " " | last | replace: ",", "" | floor}} {% endcomment %}
+                {{ compare_at_price | money_without_currency | split: " " | last | split: '.' | first}}
               {% else %}
-                {{ compare_at_price | money_without_currency | split: " " | last | replace: ",", "" | floor}}
+                {% comment %} {{ compare_at_price | money_without_currency | split: " " | last | replace: ",", "" | floor}} {% endcomment %}
+                {{ compare_at_price | money_without_currency | split: " " | last | split: '.' | first}}
               {% endif %}
               
             {% endif %}
@@ -121,7 +123,8 @@
       <div class="price-group">
         <span class="currency">AED</span>
         <span class="a price-item price-item--sale price-item--last">
-          <strong>{{ money_price | split: " " | last | replace: ",", "" | floor }}</strong>
+          {% comment %} <strong>{{ money_price | split: " " | last | replace: ",", "" | floor }}</strong> {% endcomment %}
+          <strong>{{ money_price | split: " " | last | split: '.'  | first }}</strong>
         </span>
       </div>
     </div>
