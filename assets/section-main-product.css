@@ -1632,4 +1632,18 @@ a.product__text {
   .celwidget h3 {
     font-weight: 600;
   }
+  .prime-bundles-data .bundle-title div{
+    font-size: 14px;
+
+  }
+  .prime-bundles-data .bundle-subtitle {
+    font-size: 14px;
+  }
+  .prime-bundles-data #prime-bundles.prime-bundle-price {
+    font-size: 14px;
+  }
+  .prime-bundles-data #prime-bundles.bundle-radio-button.condensed {
+    height: 15px;
+    width: 15px;
+  }
 }

@@ -132,7 +132,7 @@
 .collection__view-all a {
   background-color: unset;
   --border-offset: unset;
-  border-radius: 3px;
+  border-radius: 25px;
 }
 .collection__view-all a.button:not([disabled]):hover:after {
   --border-offset: unset;
@@ -140,10 +140,14 @@
 
 /* 2 */
 .custom-btn {
-  background: rgb(137, 72, 241);
-  background: linear-gradient(0deg, rgba(96, 9, 240, 1) 0%, rgb(173, 88, 248) 100%);
+  background: rgb(112, 105 ,188);
+  background: linear-gradient(0deg, rgba(112, 105, 188, 1) 0%, rgba(112, 105, 188, 1) 0%);
   border: none;
-
+  width: 250px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 25px;
+ 
 }
 
 .custom-btn:before {
@@ -185,6 +189,8 @@
     min-width: unset;
     font-size: 12px;
   }
-    
+  .collection__view-all a {
+    border-radius: 3px;
+  }
   
 }
