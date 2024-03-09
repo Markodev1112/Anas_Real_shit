@@ -536,7 +536,7 @@
 }
 
 .card-wrapper .card_text.card__content {
-  height: 170px;
+  height: 205px;
   background-color: #f5f5f5;
   position: relative;
 }
@@ -603,30 +603,28 @@
 }
 .card-wrapper .card_text.card__content .express-badge {
   width: 100%;
-  margin-top: 3px !important;
   display: flex;
-  gap: 1px;
+  gap: 10px;
   align-items: center;
   justify-content: start;
 }
 
 .card-wrapper .card_text.card__content .express-badge .express {
   display: inline-block;
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 600;
   width: max-content;
   height: max-content;
-  background: #fff700;
-  padding: 2px;
-  border-radius: 10px;
+  background: #ffeb00;
+  padding: 2px 10px;
+  border-radius: 25px;
   font-style: italic;
   letter-spacing: 0;
 }
 
 .card-wrapper .card_text.card__content .express-badge .express-text {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 400;
-  letter-spacing: -0.5px;
   display: inline-block;
 }
 
@@ -775,7 +773,7 @@
     font-weight: 600;
     width: max-content;
     height: max-content;
-    background: #fff700;
+    background: #ffeb00;
     padding: 2px;
     border-radius: 10px;
     font-style: italic;
