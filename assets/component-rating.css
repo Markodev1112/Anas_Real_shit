@@ -156,7 +156,7 @@
     justify-content: start;
   }
     .card-wrapper .price__container .currency {
-      font-size: 13px;
+      font-size: 12px;
       letter-spacing: 0;
     }
 }
