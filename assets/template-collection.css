@@ -121,7 +121,7 @@
 }
 .collection__title h2 {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   font-weight: 700;
   font-size: 36px;
 }
@@ -175,8 +175,8 @@
     padding: 20px;
   }
   .collection__title h2 {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 17px;
+    font-weight: 400;
     padding-bottom: 0;
   }
   .collection__title.title-wrapper {

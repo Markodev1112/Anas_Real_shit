@@ -21,6 +21,8 @@
           color: {{section.settings.icon_color}};
           content: '\276F';
           transition: all 0.2s ease;
+          display: flex;
+          align-items: center;
       }
 
     .rb-faq-question {
@@ -38,18 +40,18 @@
           color: {{section.settings.hover_color}};
       }
     .rb-faq-answer {
-          padding: 0px 20px;
-          position: relative;
-          width: 100%;
-          height: 0;
-          opacity: 0;
-          overflow: hidden;
-          visibility: hidden;
-          will-change: height;
-          transform: translateY(25px);
-          transition: all .2s ease;
-          -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+    padding: 0px 20px;
+    position: relative;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    will-change: height;
+    transform: translateY(25px);
+    transition: all .2s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     }
     .tab-toggle:checked ~ .rb-faq-answer {
       transform: translateY(0);
