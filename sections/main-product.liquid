@@ -70,7 +70,7 @@
     {%- for block in section.blocks -%}
       {%- if block.type == "title" -%}
         <div class="product__title product-title__moblie" {{ block.shopify_attributes }}>
-          <h1>{{ product.title | truncate: 55, '...' | escape }}</h1>
+          <h1>{{ product.title | escape }}</h1>
           <a href="{{ product.url }}" class="product__title">
             <h2 class="h1">
               {{ product.title | escape }}
