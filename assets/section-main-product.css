@@ -5,6 +5,14 @@
 .product.grid {
   gap: 0;
 }
+.product-title__moblie {
+  display: none;
+}
+@media(max-width:768px) {
+  .product-title__moblie {
+    display: block;
+  }
+}
 
 .product-title__moblie {
   display: none;
@@ -1055,6 +1063,9 @@ a.product__text {
 }
 
 .thumbnail-list_item--variant:not(:first-child) {
+  display: none;
+}
+.product-title__desktop {
   display: none;
 }
 
