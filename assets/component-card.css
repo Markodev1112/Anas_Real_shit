@@ -589,8 +589,8 @@
   width: 100%;
   justify-content: start;
   position: absolute;
-  top: -13%;
-  left: 2%;
+  top: -20%;
+  left: 5%;
 }
 .card-information .rating-text {
   margin-top: 0 !important;
@@ -612,7 +612,7 @@
 .card-wrapper .card_text.card__content .express-badge .express {
   display: inline-block;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   width: max-content;
   height: max-content;
   background: #7069bc;
@@ -620,7 +620,8 @@
   border-radius: 25px;
   font-style: italic;
   letter-spacing: 0;
-  color: #fff;
+  color: #fff; 
+
 }
 
 .card-wrapper .card_text.card__content .express-badge .express-text {
@@ -771,7 +772,7 @@
   .card-wrapper .card_text.card__content .express-badge .express{
     display: inline-block;
     font-size: 10px;
-    font-weight: 600;
+    font-weight: 400;
     width: max-content;
     height: max-content;
     padding: 2px;
@@ -784,9 +785,5 @@
     font-weight: 400;
     letter-spacing: -0.5px;
     display: inline-block;
-  }
-  .card-information .custom-rating {
-    top: -20%;
-    left: 5%;
   }
 }

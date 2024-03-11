@@ -5,21 +5,18 @@
     "header": {
       "type": "header",
       "settings": {
-        "bg_color": "#ffffff",
-        "logo_position": "top-left",
+        "logo_position": "top-center",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
-        "sticky_header_type": "always",
+        "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
         "color_scheme": "background-1",
-        "menu_color": "#9c19ef",
-        "mobile_nav": "#ffffff",
         "enable_country_selector": true,
         "enable_language_selector": true,
         "mobile_logo_position": "center",
         "margin_bottom": 0,
         "padding_top": 16,
-        "padding_bottom": 0
+        "padding_bottom": 16
       }
     },
     "ac64b496-d5b2-4e01-9ce3-4be0504b725a": {
