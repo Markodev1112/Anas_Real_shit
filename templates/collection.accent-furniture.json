@@ -26,12 +26,39 @@
             "bubble_text": "Ottomans",
             "bubble_link": "shopify:\/\/collections\/ottomans"
           }
+        },
+        "image_EmALxH": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/room_dividers.jpg",
+            "bubble_text": "Room Dividers",
+            "bubble_link": "shopify:\/\/collections\/room-dividers"
+          }
+        },
+        "image_pWEBHU": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/bean_bags_9d46b7c5-4357-4746-901a-544836171254.webp",
+            "bubble_text": "Bean Bags",
+            "bubble_link": "shopify:\/\/collections\/bean-bags"
+          }
+        },
+        "image_FaCKy8": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/bamboo.jpg",
+            "bubble_text": "Bamboo Benches",
+            "bubble_link": "shopify:\/\/collections\/bamboo-benches"
+          }
         }
       },
       "block_order": [
         "image_RGLjWH",
         "image_39PzNg",
-        "image_gg3qkr"
+        "image_gg3qkr",
+        "image_EmALxH",
+        "image_pWEBHU",
+        "image_FaCKy8"
       ],
       "settings": {
         "hide_mobile": false,
@@ -85,6 +112,7 @@
         "image_y7Jjeb",
         "image_kjgPcV"
       ],
+      "disabled": true,
       "settings": {
         "hide_mobile": false,
         "hide_desktop": false,
