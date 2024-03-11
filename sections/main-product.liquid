@@ -13,7 +13,18 @@
     {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
   {%- endif -%}
 
+  <script src="{{ 'read-more.js' | asset_url }}" defer="defer"></script>
+
   {%- style -%}
+
+.product-description-container {
+  margin-bottom: 2rem;
+}
+
+#product-description {
+  height: 200px;
+  overflow: hidden;
+}
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
       padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -63,6 +74,19 @@
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
   <div class="page-width">
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+    {%- for block in section.blocks -%}
+      {%- if block.type == "title" -%}
+        <div class="product__title product-title__moblie" {{ block.shopify_attributes }}>
+          <h1>{{ product.title | truncate: 40, '...' | escape }}</h1>
+          <a href="{{ product.url }}" class="product__title">
+            <h2 class="h1">
+              {{ product.title | escape }}
+            </h2>
+          </a>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+    
     <div class="grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}">
       {% render 'product-media-gallery', variant_images: variant_images %}
     </div>
@@ -87,7 +111,7 @@
                 {{- block.settings.text -}}
               </p>
             {%- when 'title' -%}
-              <div class=" product__title" {{ block.shopify_attributes }}>
+              <div class=" product__title product-title__desktop" {{ block.shopify_attributes }}>
                 <h1>{{ product.title | escape }}</h1>
                 <a href="{{ product.url }}" class="product__title">
                   <h2 class="h1">
@@ -172,12 +196,21 @@
                 {%- endif -%}
               </p>
             {%- when 'description' -%}
-              {%- if product.description != blank -%}
-                <div class=" product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
+             
+                {% comment %} <div class=" product__description rte quick-add-hidden" {{ block.shopify_attributes }}>
                   <span class="block-title">Description</span>
                   {{ product.description }}
-                </div>
-              {%- endif -%}
+                </div> {% endcomment %}
+
+                <div class="product-description-container">
+                  <div class="product-single__description rte" id="product-description">
+                    {{ product.description }}
+                  </div>
+                </div> 
+                <a class="readmore product-description__button arrow-down" >Show More</a>
+                
+
+              
             {%- when 'sku' -%}
               <p
                 class="product__sku no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.sku.size == 0 %} visibility-hidden{% endif %}"

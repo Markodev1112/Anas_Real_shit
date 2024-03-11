@@ -5,6 +5,14 @@
 .product.grid {
   gap: 0;
 }
+.product-title__moblie {
+  display: none;
+}
+@media(max-width:768px) {
+  .product-title__moblie {
+    display: block;
+  }
+}
 
 .product--no-media {
   max-width: 57rem;
@@ -1045,8 +1053,15 @@ a.product__text {
 .thumbnail-list_item--variant:not(:first-child) {
   display: none;
 }
+.product-title__desktop {
+  display: none;
+}
 
 @media screen and (min-width: 990px) {
+  .product-title__desktop {
+    display: block !important;
+  }
+
   .thumbnail-list {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -1647,3 +1662,17 @@ a.product__text {
     width: 15px;
   }
 }
+
+.product-description__button {
+  cursor: pointer !important;
+  line-height: 1.35;
+  color: #007185;
+}
+.arrow-down::before {
+  
+}
+.arrow-up::before {
+  
+
+}
+
