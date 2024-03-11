@@ -589,8 +589,13 @@
   width: 100%;
   justify-content: start;
   position: absolute;
-  top: -20%;
-  left: 5%;
+  top: -13%;
+  left: 2%;
+  gap: 0;
+}
+.card-information .custom-rating .rating {
+  display: flex;
+  align-items: baseline;
 }
 .card-information .rating-text {
   margin-top: 0 !important;
@@ -702,7 +707,10 @@
   .card-wrapper .card_text.card__content a.show-review {
     max-height: 40px !important;
   }
-  
+  .card-information .custom-rating {
+    top: -20%;
+    left: 5%;
+  }
   .card-information .custom-rating .rating .rating-value {
     font-size: 14px;
     font-weight: 400;
