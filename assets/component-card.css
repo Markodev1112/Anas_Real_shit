@@ -591,11 +591,6 @@
   position: absolute;
   top: -13%;
   left: 2%;
-  gap: 0;
-}
-.card-information .custom-rating .rating {
-  display: flex;
-  align-items: baseline;
 }
 .card-information .rating-text {
   margin-top: 0 !important;
@@ -617,7 +612,7 @@
 .card-wrapper .card_text.card__content .express-badge .express {
   display: inline-block;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   width: max-content;
   height: max-content;
   background: #7069bc;
@@ -626,7 +621,6 @@
   font-style: italic;
   letter-spacing: 0;
   color: #fff;
-
 }
 
 .card-wrapper .card_text.card__content .express-badge .express-text {
@@ -707,10 +701,7 @@
   .card-wrapper .card_text.card__content a.show-review {
     max-height: 40px !important;
   }
-  .card-information .custom-rating {
-    top: -20%;
-    left: 5%;
-  }
+  
   .card-information .custom-rating .rating .rating-value {
     font-size: 14px;
     font-weight: 400;
@@ -780,7 +771,7 @@
   .card-wrapper .card_text.card__content .express-badge .express{
     display: inline-block;
     font-size: 10px;
-    font-weight: 400;
+    font-weight: 600;
     width: max-content;
     height: max-content;
     padding: 2px;
@@ -793,5 +784,9 @@
     font-weight: 400;
     letter-spacing: -0.5px;
     display: inline-block;
+  }
+  .card-information .custom-rating {
+    top: -20%;
+    left: 5%;
   }
 }

@@ -1,19 +1,58 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "slideshow_ALpHbw": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_UqabyM": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3200x1600.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 10,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_ne6G9X": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ramadan_021cb6e5-25ad-42ba-a982-e85112ba359f.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "bottom-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 10,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_UqabyM",
+        "slide_ne6G9X"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/3.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 7,
         "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "show_text_below": false,
+        "accessibility_info": ""
       }
     },
     "944c04af-9889-4417-8387-8b27d7fb2062": {
@@ -58,38 +97,8 @@
             "bubble_text": "Combat Sports",
             "bubble_link": "shopify:\/\/collections\/combat-sports"
           }
-        }
-      },
-      "block_order": [
-        "template--16906951196927__944c04af-9889-4417-8387-8b27d7fb2062-Image-1",
-        "template--16906951196927__944c04af-9889-4417-8387-8b27d7fb2062-Image-2",
-        "template--16906951196927__944c04af-9889-4417-8387-8b27d7fb2062-Image-3",
-        "template--16906951196927__944c04af-9889-4417-8387-8b27d7fb2062-Image-4",
-        "template--16906951196927__944c04af-9889-4417-8387-8b27d7fb2062-Image-5"
-      ],
-      "settings": {
-        "hide_mobile": false,
-        "hide_desktop": false,
-        "mobile_content_alignment": "center",
-        "icon_size": 100,
-        "icon_size_mobile": 38,
-        "text_size": 12,
-        "text_color": "#121212",
-        "heading_custom": false,
-        "heading_font": "assistant_n4",
-        "border_size": 2,
-        "ring_color": "#121212",
-        "background_gradient": "",
-        "square_image": false,
-        "background-color": "#ffffff",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "4ae9ff73-de98-4986-9fc8-c023f515042d": {
-      "type": "ss-circle-menu",
-      "blocks": {
-        "template--16906951196927__4ae9ff73-de98-4986-9fc8-c023f515042d-Image-2": {
+        },
+        "image_Nzh7XT": {
           "type": "Image",
           "settings": {
             "bubble_img": "shopify:\/\/shop_images\/71YMzEveFGL.__AC_SX300_SY300_QL70_ML2_-removebg-preview.png",
@@ -97,7 +106,7 @@
             "bubble_link": "shopify:\/\/collections\/car-cleaning"
           }
         },
-        "template--16906951196927__4ae9ff73-de98-4986-9fc8-c023f515042d-Image-3": {
+        "image_3Edmyg": {
           "type": "Image",
           "settings": {
             "bubble_img": "shopify:\/\/shop_images\/61O288S1PvL._SL1500.jpg",
@@ -105,7 +114,7 @@
             "bubble_link": "shopify:\/\/collections\/printers-and-inks"
           }
         },
-        "template--16906951196927__4ae9ff73-de98-4986-9fc8-c023f515042d-Image-4": {
+        "image_ty6gwn": {
           "type": "Image",
           "settings": {
             "bubble_img": "shopify:\/\/shop_images\/71POG_MKq-L._AC_SL1500_-removebg-preview.png",
@@ -113,7 +122,7 @@
             "bubble_link": "shopify:\/\/collections\/monitors"
           }
         },
-        "template--16906951196927__4ae9ff73-de98-4986-9fc8-c023f515042d-Image-5": {
+        "image_ExpRht": {
           "type": "Image",
           "settings": {
             "bubble_img": "shopify:\/\/shop_images\/71c_YOxfTGL._AC_SX522.jpg",
@@ -121,7 +130,7 @@
             "bubble_link": "shopify:\/\/collections\/headphones-earphones"
           }
         },
-        "image_JqwznX": {
+        "image_xzBFcD": {
           "type": "Image",
           "settings": {
             "bubble_img": "shopify:\/\/shop_images\/Screenshot_2024-01-22_at_2.10.26_PM.png",
@@ -131,19 +140,24 @@
         }
       },
       "block_order": [
-        "template--16906951196927__4ae9ff73-de98-4986-9fc8-c023f515042d-Image-2",
-        "template--16906951196927__4ae9ff73-de98-4986-9fc8-c023f515042d-Image-3",
-        "template--16906951196927__4ae9ff73-de98-4986-9fc8-c023f515042d-Image-4",
-        "template--16906951196927__4ae9ff73-de98-4986-9fc8-c023f515042d-Image-5",
-        "image_JqwznX"
+        "template--16906951196927__944c04af-9889-4417-8387-8b27d7fb2062-Image-1",
+        "template--16906951196927__944c04af-9889-4417-8387-8b27d7fb2062-Image-2",
+        "template--16906951196927__944c04af-9889-4417-8387-8b27d7fb2062-Image-3",
+        "template--16906951196927__944c04af-9889-4417-8387-8b27d7fb2062-Image-4",
+        "template--16906951196927__944c04af-9889-4417-8387-8b27d7fb2062-Image-5",
+        "image_Nzh7XT",
+        "image_3Edmyg",
+        "image_ty6gwn",
+        "image_ExpRht",
+        "image_xzBFcD"
       ],
       "settings": {
         "hide_mobile": false,
         "hide_desktop": false,
         "mobile_content_alignment": "center",
-        "icon_size": 100,
-        "icon_size_mobile": 66,
-        "text_size": 12,
+        "icon_size": 150,
+        "icon_size_mobile": 72,
+        "text_size": 16,
         "text_color": "#121212",
         "heading_custom": false,
         "heading_font": "assistant_n4",
@@ -176,7 +190,35 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 40
+      }
+    },
+    "custom_ramadan_izg4dK": {
+      "type": "custom-ramadan",
+      "settings": {
+        "title": "Ramadan Special Offers",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "ramadan-special-offer",
+        "products_to_show": 25,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "6c85d179-6ca2-4bf7-a99c-1f48772a9cc5": {
@@ -242,7 +284,7 @@
         "featured_collection_X6dJ48"
       ],
       "settings": {
-        "title": "<strong>VALENTINE SALE   40% OFF<\/strong>",
+        "title": "<strong>COUPLE SALE  40% OFF<\/strong>",
         "heading_size": "h2",
         "image_ratio": "adapt",
         "columns_desktop": 5,
@@ -250,8 +292,8 @@
         "show_view_all": true,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "featured_collection_3FfEbX": {
@@ -268,16 +310,16 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
+        "enable_desktop_slider": true,
         "color_scheme": "",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
-        "show_rating": false,
+        "show_rating": true,
         "enable_quick_add": false,
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -338,16 +380,16 @@
         "1843b992-c067-4996-98ee-d546399cceb0"
       ],
       "settings": {
-        "title": "<strong>Self-Care<\/strong>",
-        "heading_size": "h1",
+        "title": "<strong>Self-Care | Ramdan Sale | Upto 60% OFF<\/strong>",
+        "heading_size": "h2",
         "image_ratio": "adapt",
         "columns_desktop": 5,
         "color_scheme": "",
         "show_view_all": true,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "cc375cbc-ce67-4d18-bfcf-64d52c40299e": {
@@ -406,16 +448,16 @@
         "805c9222-758a-45b4-9ce8-30f7cfcf62da"
       ],
       "settings": {
-        "title": "<strong>Gaming<\/strong>",
+        "title": "<strong>Gaming  | Ramadan Sale | UP TO 40% OFF          <\/strong><em><strong> <\/strong><\/em>",
         "heading_size": "h1",
         "image_ratio": "adapt",
-        "columns_desktop": 4,
+        "columns_desktop": 5,
         "color_scheme": "",
         "show_view_all": true,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 16,
-        "padding_bottom": 16
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "1e3f778f-b493-4764-bc66-b5aacc2de2af": {
@@ -436,7 +478,7 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
+        "enable_desktop_slider": true,
         "color_scheme": "background-1",
         "image_ratio": "square",
         "image_shape": "default",
@@ -445,7 +487,7 @@
         "show_rating": false,
         "enable_quick_add": false,
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -527,7 +569,7 @@
         "featured_collection_QeRFcY"
       ],
       "settings": {
-        "title": "<strong>Furniture  <\/strong>",
+        "title": "<strong>Furniture  | Ramadan Sale | UP TO 50% OFF<\/strong>",
         "heading_size": "h1",
         "image_ratio": "adapt",
         "columns_desktop": 5,
@@ -535,15 +577,13 @@
         "show_view_all": true,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "50a7d11a-f586-4a93-962c-1cdf12d415c5": {
       "type": "featured-collection",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "title": "Samsung Deals",
         "heading_size": "h1",
@@ -551,12 +591,12 @@
         "show_description": false,
         "description_style": "body",
         "collection": "phones",
-        "products_to_show": 6,
+        "products_to_show": 10,
         "columns_desktop": 5,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
+        "enable_desktop_slider": true,
         "color_scheme": "",
         "image_ratio": "square",
         "image_shape": "default",
@@ -565,7 +605,7 @@
         "show_rating": false,
         "enable_quick_add": false,
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -633,7 +673,7 @@
         "3a814b10-5437-4f92-8e38-c570d489605a"
       ],
       "settings": {
-        "title": "<strong>Watches <\/strong>",
+        "title": "<strong>Watches | Ramadan Sale | UP TO 50% OFF<\/strong>",
         "heading_size": "h1",
         "image_ratio": "adapt",
         "columns_desktop": 5,
@@ -641,8 +681,8 @@
         "show_view_all": true,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "09580714-9889-44a8-9dfd-71d4a1275c17": {
@@ -659,42 +699,13 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
+        "enable_desktop_slider": true,
         "color_scheme": "",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "65f53ff6-5ac9-4953-8a5e-44bbbb7a823c": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "<strong>Beauty Deals under 50 AED<\/strong>",
-        "heading_size": "h2",
-        "description": "<p>BLACK FRIDAY SALE 30 % OFF<\/p>",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "",
-        "products_to_show": 16,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": true,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
+        "show_rating": true,
         "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
@@ -765,16 +776,16 @@
         "featured_collection_D6wWDb"
       ],
       "settings": {
-        "title": "<strong>CaveWomen Fashion <\/strong>",
-        "heading_size": "h1",
+        "title": "<strong>CaveWomen Fashion | Ramadan Sale | UP TO 60 % OFF<\/strong>",
+        "heading_size": "h2",
         "image_ratio": "adapt",
         "columns_desktop": 5,
         "color_scheme": "",
         "show_view_all": true,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "8755f1d3-3286-4f50-b848-3719b9795f7d": {
@@ -855,8 +866,8 @@
         "show_view_all": true,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "7e2eb657-a90d-4faf-bd9e-fd3147f98371": {
@@ -1501,10 +1512,10 @@
     }
   },
   "order": [
-    "image_banner",
+    "slideshow_ALpHbw",
     "944c04af-9889-4417-8387-8b27d7fb2062",
-    "4ae9ff73-de98-4986-9fc8-c023f515042d",
     "ee9cad01-7da5-4585-aafc-98a7448d02fd",
+    "custom_ramadan_izg4dK",
     "6c85d179-6ca2-4bf7-a99c-1f48772a9cc5",
     "featured_collection_3FfEbX",
     "9ffb0d1b-e275-48dc-a54b-ff68e916e0b7",
@@ -1514,7 +1525,6 @@
     "50a7d11a-f586-4a93-962c-1cdf12d415c5",
     "a55941f9-21fa-4cb4-9270-27863a69a597",
     "09580714-9889-44a8-9dfd-71d4a1275c17",
-    "65f53ff6-5ac9-4953-8a5e-44bbbb7a823c",
     "af07221c-cc5f-4eef-8ac8-03585de49715",
     "8755f1d3-3286-4f50-b848-3719b9795f7d",
     "7e2eb657-a90d-4faf-bd9e-fd3147f98371",
